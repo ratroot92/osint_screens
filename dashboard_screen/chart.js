@@ -1,599 +1,5 @@
-<!doctype html>
-<html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <title>Hello, world!</title>
-</head>
-<style>
-  body {
-    background: url('background gradient.svg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0 !important;
-    padding: 0 !important;
-
-
-  }
-
-  #header {
-
-  
-    border:1px solid #1cb5e0;
-    border-radius: 1px 1px 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  
-    background: linear-gradient(to bottom, #0071bc 0%, #999999 100%); opacity: 0.6;
-  }
-  
-
-  .custom_center {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .glowing_border {
-    border: 1px solid #1cb5e0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 4px #1cb5e0;
-    -moz-box-shadow: 0px 0px 4px #1cb5e0;
-    box-shadow: 0px 0px 4px #1cb5e0;
-  }
-
-  #bar_1 {
-    height: 250px;
-    width: 100%;
-    border-radius: 0px 10px 0px 0px;
-    border-right: 1px solid yellow;
-    border-bottom: 1px solid yellow;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 89%, 92% 100%, 0 100%, 0 100%, 0 0);
-    background: #1cb5e0;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #283E51, #1cb5e0);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #283E51, #1cb5e0);
-  }
-
-  #bar_2 {
-    height: 250px;
-    width: 95%;
-    border: 1px solid yellow;
-    border-radius: 0px 10px 0px 0px;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 86%, 89% 100%, 0 100%, 0 100%, 0 0);
-
-  }
-
-  #bar_3 {
-    height: 250px;
-    width: 95%;
-    border-right: 1px solid yellow;
-    border-top: 1px solid yellow;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 25px;
-    padding-left: 10px;
-    border-radius: 0px 10px 0px 0px;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 83%, 86% 100%, 0 100%, 0 100%, 0 0);
-  }
-
-  #bar_4 {
-    height: 90%;
-    width: 100%;
-    border: 1px solid white;
-    border-radius: 0px 10px 0px 0px;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 80%, 83% 100%, 0 100%, 0 100%, 0 0);
-
-  }
-
-  #bar_5 {
-    height: 100%;
-    width: 95%;
-    border-left: 1px solid rgb(247, 247, 243);
-    float: right;
-
-  }
-
-  #bar_6 {
-    height: 100%;
-    width: 95%;
-    border-left: 1px solid white;
-    float: right;
-    font-size: 12px;
-    background: #1cb5e0;
-    background: -webkit-linear-gradient(to right, #283E51, #1cb5e0);
-    background: linear-gradient(to right, #283E51, #1cb5e0);
-   
-
-
-  }
-
-  .bar_7 {
-    -webkit-clip-path: polygon(52% 0, 76% 57%, 100% 58%, 100% 100%, 68% 100%, 61% 82%, 0 81%, 0 0);
-    clip-path: polygon(52% 0, 76% 57%, 100% 58%, 100% 100%, 68% 100%, 61% 82%, 0 81%, 0 0);
-    height: 70px;
-    background-color: #1cb5e0 !important;
-    opacity: 0.9;
-  }
-
-#tri_{
-  clip-path: polygon(0 0, 54% 0, 90% 100%, 0 100%)!important;
-  background-color: #1cb5e0;
-  height: 35px;
-  width: 150px;
-  position: relative;
-  font-weight: bold;
-}
-
-
-
-</style>
-
-<body class="bg-dark">
-  <div class="container-fluid" id="cover">
-    <div class="row " style="">
-      <div class="col-md-1">
-
-
-
-
-      </div>
-      <div class="col-md-10  pt-3 pb-3" id="header">
-        <div class="row h-100">
-          <div class="col-md-4  h-100">
-            <div class="row h-100">
-              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;"></div>
-              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;">
-                <a class="text-white "style="font-size :20px;">DASHBOARD</a></div>
-              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
-                  style="font-size :16px;">MONITOR</a></div>
-
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-12 custom_center  " style="border-right:3px solid #1cb5e0">
-                <img src="Assets/logo.svg" height="100" width="150" class=" m-0 p-0" /></div>
-            </div>
-
-          </div>
-          <div class="col-md-4 h-100">
-            <div class="row h-100">
-              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
-                  style="font-size :16px;">EXPLORE</a></div>
-              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
-                  style="font-size :16px;">RETRIEVE</a></div>
-              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-
-    </div>
-
-
-    <div class="row mt-5">
-      <div class="col-md-2">
-
-        <div class="row">
-          <div class="col-md-12">
-           
-            <div id="tri_" style="background-image: url('');">
-              <div class="d-flex flex-row justify-content-between align-items-center ">
-               <span class="text-white ml-2 "style="font-size:9px;margin-top:5px;"> TIME 15:00 GMT</span>
-               
-              </div>
-              <div class="d-flex flex-row justify-content-between align-items-center ">
-                <span class="text-white ml-2"style="font-size:9px;"> DATE 02-03-2020 </span>
-               
-              </div>
-            
-            </div>
-            <!-- start of bars -->
-            <div id="bar_1">
-              <div id="bar_2">
-                <div id="bar_3">
-                  <p class="text-white m-0 p-0 ml-4 font-weight-bold" style="font-size:13px;letter-spacing:5px">
-                    NOTIFICATION</p>
-                  <div id="bar_4">
-                    <div id="bar_5">
-                      <div id="bar_6" class="text-wrap text-white ">
-                        <div class="m-0 p-1 mt-3  w-100 bottom-align-text font-weight-bold "
-                          style="font-size:13px;border-bottom:1px solid white" class="text-white">
-                          Main Headline ....
-                        </div>
-
-                        <div class="m-0 p-1" style="font-size:12px;color:white">
-                          Lorem ipsum dolor sit amet consectetur adipisicing deleniti, itaque cumque velit?
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <!-- end of bars -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 p-3">
-            <div class=" bar_7" id="">
-              <div class="w-100 h-100 d-flex flex-row ">
-                <div class=" bg-dark custom_center " style="height:90%;width:60px;">
-                  <img src="generate icon.svg"  style="height:40px;width:40px;" />
-
-
-                </div>
-          <div class="" style="position: relative;">
-            <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">FETCH</div>
-          </div>
-              </div>
-            </div>
-            <div class=" bar_7" id="">
-              <div class="w-100 h-100 d-flex flex-row">
-                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
-                  <img src="analyze icon.svg" style="height:40px;width:40px;" />
-
-
-                </div>
-                <div class="" style="position: relative;">
-                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">ANALYZE</div>
-                </div>
-              </div>
-            </div>
-            <div class=" bar_7" id="">
-              <div class="w-100 h-100 d-flex flex-row">
-                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
-                  <img src="fetch icon.svg" style="height:40px;width:40px;" />
-
-
-                </div>
-                <div class="" style="position: relative;">
-                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">SEARCH</div>
-                </div>
-              </div>
-            </div>
-            <div class=" bar_7" id="">
-              <div class="w-100 h-100 d-flex flex-row">
-                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
-                  <img src="search icon.svg" style="height:40px;width:40px;" />
-
-
-                </div>
-                <div class="" style="position: relative;">
-                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">GENERATE</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
-            <div class="row">
-              <div class="col-md-1 custom_center glowing_border "
-                style="height:270px;border-radius:15px 0px 0px 15px;">
-                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
-                  Media </p>
-              </div>
-              <div class="col-md-11  glowing_border" style="border-radius:0px 15px 15px 0px;">
-                <div id="chart_1" class="m-0 p-3" style="height:100%;width:100%"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
-            <div class="row">
-              <div class="col-md-1 custom_center glowing_border "
-                style="height:270px;border-radius:15px 0px 0px 15px;">
-                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
-                  Media </p>
-              </div>
-              <div class="col-md-11 glowing_border" style="border-radius:0px 15px 15px 0px;">
-                <div id="chart_2" class="m-0 p-3" style="height:100%;width:100%"></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
-            <div class="row">
-              <div class="col-md-1 custom_center glowing_border "
-                style="height:270px;border-radius:15px 0px 0px 15px;">
-                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
-                  Media </p>
-              </div>
-              <div class="col-md-11 glowing_border" style="border-radius:0px 15px 15px 0px;">
-                <div id="chart_3" class="m-0 p-3" style="height:100%;width:100%"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
-            <div class="row">
-              <div class="col-md-1 custom_center glowing_border "
-                style="height:270px;border-radius:15px 0px 0px 15px;">
-                <p class="text-white custom_center " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
-                  Media </p>
-              </div>
-              <div class="col-md-11 glowing_border " style="border-radius:0px 15px 15px 0px;">
-                <div id="chart_4" class="m-0 p-3 " style="height:100%;width:100%"></div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    <div class="col-md-2">
-    <div class="row">
-      <div class="col-md-12">
-        
-      </div>
-    </div>
-    </div>
-
-  </div>
-  <div class="row ">
-    <div class="col-md-2"></div>
-    <div class="col-md-8 glowing_border"  style="border-radius:5px;">
-      <div class="row">
-        <div class="col-md-2 m-0 p-3">
-          <div class="custom_center  "style="border-right :15px solid #1cb5e0;border-left :15px solid #1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;height:100%;">
-            <div class="text-center  text-white " style="font-size: 10px;">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos tenetur facilis doloremque.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 m-0 p-3 ">
-          <div id="chart_5" class="m-0 p-0 " style="border-right :15px solid#1cb5e0;border-left :15px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px; height:100%;width:100%"></div>
-        </div>
-        <div class="col-md-6  m-0 p-3 " style="">
-          <div class="row">
-            <div class="col-md-4 "  style="">
-              <div id="chart_6" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
-            </div>
-            <div class="col-md-4 "  style="">
-              <div id="chart_7" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
-            </div>
-            <div class="col-md-4 "  style="">
-              <div id="chart_8" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 text-white">
-      asdasd
-    </div>
-  </div>
-  </div>
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/uxl/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-
-
-  <!-- Resources -->
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
-  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-  <script>
-    am4core.ready(function () {
-
-      // Themes begin
-      am4core.useTheme(am4themes_animated);
-      // Themes end
-
-      // Create chart instance
-      var chart = am4core.create("chart_1", am4charts.PieChart);
-
-      // Add data
-      chart.data = [{
-        "source": "Twitter",
-        "value": 501.9
-
-      }, {
-        "source": "Linkedin",
-        "value": 301.9
-      }, {
-        "source": "Facebook",
-        "value": 201.1
-      }, {
-        "source": "Instagram",
-        "value": 165.8
-      }, ];
-
-// Responsive
-chart.responsive.enabled = true;
-chart.responsive.rules.push({
-  relevant: function(target) {
-    if (target.pixelWidth <= 400) {
-      return true;
-    }
-    return false;
-  },
-  state: function(target, stateId) {
-    if (target instanceof am4charts.PieSeries) {
-      var state = target.states.create(stateId);
-
-      var labelState = target.labels.template.states.create(stateId);
-      labelState.properties.disabled = true;
-
-      var tickState = target.ticks.template.states.create(stateId);
-      tickState.properties.disabled = true;
-      return state;
-    }
-
-    return null;
-  }
-});
-      // Set inner radius
-      chart.innerRadius = am4core.percent(50);
-
-      // Add and configure Series
-      var pieSeries = chart.series.push(new am4charts.PieSeries());
-      pieSeries.dataFields.value = "value";
-      pieSeries.dataFields.category = "source";
-      pieSeries.slices.template.stroke = am4core.color("#fff");
-      pieSeries.slices.template.strokeWidth = 2;
-      pieSeries.slices.template.strokeOpacity = 1;
-      pieSeries.labels.template.fill = am4core.color("white");
-      pieSeries.slices.template.tooltipText = "{source}: {value.value}";
-      pieSeries.labels.template.fontSize = 12;
-
-      var rgm = new am4core.RadialGradientModifier();
-      rgm.brightnesses.push(-0.8, -0.8, -0.5, 0, -0.5);
-      pieSeries.slices.template.fillModifier = rgm;
-      pieSeries.slices.template.strokeModifier = rgm;
-      pieSeries.slices.template.strokeOpacity = 0.4;
-      pieSeries.slices.template.strokeWidth = 0;
-      // This creates initial animation
-      pieSeries.hiddenState.properties.opacity = 1;
-      pieSeries.hiddenState.properties.endAngle = -90;
-      pieSeries.hiddenState.properties.startAngle = -90;
-
-      pieSeries.colors.list = [
-        am4core.color("#845EC2"),
-        am4core.color("#D65DB1"),
-        am4core.color("#FF6F91"),
-        am4core.color("#FF9671"),
-        am4core.color("#FFC75F"),
-        am4core.color("#F9F871"),
-      ];
-    }); // end am4core.ready()
-  </script>
-
-  <!-- Chart code -->
-  <script>
-    am4core.ready(function () {
-
-      // Themes begin
-      am4core.useTheme(am4themes_animated);
-      // Themes end
-
-      var chart = am4core.create("chart_2", am4charts.XYChart);
-
-      var data = [];
-      var value = 120;
-
-      var names = ["Raina",
-        "Demarcus",
-        "Carlo",
-        "Jacinda",
-        "Richie",
-        "Antony",
-        "Amada",
-        "Idalia",
-        "Janella",
-        "Marla",
-        "Curtis",
-        "Shellie",
-        "Meggan",
-        "Nathanael",
-        "Jannette",
-        "Tyrell",
-        "Sheena",
-        "Maranda",
-        "Briana",
-        "Rosa",
-        "Rosanne",
-        "Herman",
-        "Wayne",
-        "Shamika",
-        "Suk",
-        "Clair",
-        "Olivia",
-        "Hans",
-        "Glennie",
-      ];
-
-      for (var i = 0; i < names.length; i++) {
-        value += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
-        data.push({
-          category: names[i],
-          value: value
-        });
-      }
-
-      chart.data = data;
-      var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-      categoryAxis.renderer.grid.template.location = 0;
-      categoryAxis.dataFields.category = "category";
-      categoryAxis.renderer.minGridDistance = 15;
-      categoryAxis.renderer.grid.template.location = 0.5;
-      categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
-      categoryAxis.renderer.labels.template.rotation = -90;
-      categoryAxis.renderer.labels.template.horizontalCenter = "left";
-      categoryAxis.renderer.labels.template.location = 0.5;
-      categoryAxis.renderer.labels.template.fontSize = 12;
-      categoryAxis.renderer.labels.template.fill = am4core.color("white");
-
-      categoryAxis.renderer.labels.template.adapter.add("dx", function (dx, target) {
-        return -target.maxRight / 2;
-      })
-
-      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-      valueAxis.tooltip.disabled = true;
-      valueAxis.renderer.ticks.template.disabled = true;
-      valueAxis.renderer.axisFills.template.disabled = true;
-      valueAxis.renderer.labels.template.fontSize = 12;
-      valueAxis.renderer.labels.template.fill = am4core.color("white");
-
-
-
-      var series = chart.series.push(new am4charts.ColumnSeries());
-      series.dataFields.categoryX = "category";
-      series.dataFields.valueY = "value";
-      series.tooltipText = "{valueY.value}";
-      series.sequencedInterpolation = true;
-      series.fillOpacity = 0;
-      series.strokeOpacity = 1;
-      series.strokeDashArray = "1,3";
-      series.columns.template.width = 0.01;
-      series.tooltip.pointerOrientation = "horizontal";
-
-      var bullet = series.bullets.create(am4charts.CircleBullet);
-
-      chart.cursor = new am4charts.XYCursor();
-
-      chart.scrollbarX = new am4core.Scrollbar();
-      chart.scrollbarY = new am4core.Scrollbar();
-
-
-    }); // end am4core.ready()
-  </script>
-
-  <script>
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -680,7 +86,6 @@ chart.responsive.rules.push({
       chart.cursor = new am4charts.RadarCursor();
 
     }); // end am4core.ready()
-  </script>
 
 
 
@@ -695,7 +100,8 @@ chart.responsive.rules.push({
 
 
 
-  <script>
+
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -839,11 +245,11 @@ chart.responsive.rules.push({
       });
 
     }); // end am4core.ready()
-  </script>
 
 
 
-  <script>
+
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -991,12 +397,12 @@ chart.responsive.rules.push({
       });
 
     }); // end am4core.ready()
-  </script>
 
 
 
 
-  <script>
+
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -1144,10 +550,10 @@ chart.responsive.rules.push({
       });
 
     }); // end am4core.ready()
-  </script>
 
 
-  <script>
+
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -1295,10 +701,10 @@ chart.responsive.rules.push({
       });
 
     }); // end am4core.ready()
-  </script>
 
 
-  <script>
+
+ 
     am4core.ready(function () {
 
       // Themes begin
@@ -1446,8 +852,189 @@ chart.responsive.rules.push({
       });
 
     }); // end am4core.ready()
-  </script>
 
-</body>
 
-</html>
+
+    am4core.ready(function () {
+
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+  
+        // Create chart instance
+        var chart = am4core.create("chart_1", am4charts.PieChart);
+  
+        // Add data
+        chart.data = [{
+          "source": "Twitter",
+          "value": 501.9
+  
+        }, {
+          "source": "Linkedin",
+          "value": 301.9
+        }, {
+          "source": "Facebook",
+          "value": 201.1
+        }, {
+          "source": "Instagram",
+          "value": 165.8
+        }, ];
+  
+        // Responsive
+        chart.responsive.enabled = true;
+        chart.responsive.rules.push({
+          relevant: function (target) {
+            if (target.pixelWidth <= 400) {
+              return true;
+            }
+            return false;
+          },
+          state: function (target, stateId) {
+            if (target instanceof am4charts.PieSeries) {
+              var state = target.states.create(stateId);
+  
+              var labelState = target.labels.template.states.create(stateId);
+              labelState.properties.disabled = true;
+  
+              var tickState = target.ticks.template.states.create(stateId);
+              tickState.properties.disabled = true;
+              return state;
+            }
+  
+            return null;
+          }
+        });
+        // Set inner radius
+        chart.innerRadius = am4core.percent(50);
+  
+        // Add and configure Series
+        var pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "value";
+        pieSeries.dataFields.category = "source";
+        pieSeries.slices.template.stroke = am4core.color("#fff");
+        pieSeries.slices.template.strokeWidth = 2;
+        pieSeries.slices.template.strokeOpacity = 1;
+        pieSeries.labels.template.fill = am4core.color("white");
+        pieSeries.slices.template.tooltipText = "{source}: {value.value}";
+        pieSeries.labels.template.fontSize = 12;
+  
+        var rgm = new am4core.RadialGradientModifier();
+        rgm.brightnesses.push(-0.8, -0.8, -0.5, 0, -0.5);
+        pieSeries.slices.template.fillModifier = rgm;
+        pieSeries.slices.template.strokeModifier = rgm;
+        pieSeries.slices.template.strokeOpacity = 0.4;
+        pieSeries.slices.template.strokeWidth = 0;
+        // This creates initial animation
+        pieSeries.hiddenState.properties.opacity = 1;
+        pieSeries.hiddenState.properties.endAngle = -90;
+        pieSeries.hiddenState.properties.startAngle = -90;
+  
+        pieSeries.colors.list = [
+          am4core.color("#845EC2"),
+          am4core.color("#D65DB1"),
+          am4core.color("#FF6F91"),
+          am4core.color("#FF9671"),
+          am4core.color("#FFC75F"),
+          am4core.color("#F9F871"),
+        ];
+      }); // end am4core.ready()
+ 
+  
+
+      am4core.ready(function () {
+  
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+  
+        var chart = am4core.create("chart_2", am4charts.XYChart);
+  
+        var data = [];
+        var value = 120;
+  
+        var names = ["Raina",
+          "Demarcus",
+          "Carlo",
+          "Jacinda",
+          "Richie",
+          "Antony",
+          "Amada",
+          "Idalia",
+          "Janella",
+          "Marla",
+          "Curtis",
+          "Shellie",
+          "Meggan",
+          "Nathanael",
+          "Jannette",
+          "Tyrell",
+          "Sheena",
+          "Maranda",
+          "Briana",
+          "Rosa",
+          "Rosanne",
+          "Herman",
+          "Wayne",
+          "Shamika",
+          "Suk",
+          "Clair",
+          "Olivia",
+          "Hans",
+          "Glennie",
+        ];
+  
+        for (var i = 0; i < names.length; i++) {
+          value += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          data.push({
+            category: names[i],
+            value: value
+          });
+        }
+  
+        chart.data = data;
+        var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.dataFields.category = "category";
+        categoryAxis.renderer.minGridDistance = 15;
+        categoryAxis.renderer.grid.template.location = 0.5;
+        categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
+        categoryAxis.renderer.labels.template.rotation = -90;
+        categoryAxis.renderer.labels.template.horizontalCenter = "left";
+        categoryAxis.renderer.labels.template.location = 0.5;
+        categoryAxis.renderer.labels.template.fontSize = 12;
+        categoryAxis.renderer.labels.template.fill = am4core.color("white");
+  
+        categoryAxis.renderer.labels.template.adapter.add("dx", function (dx, target) {
+          return -target.maxRight / 2;
+        })
+  
+        var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+        valueAxis.tooltip.disabled = true;
+        valueAxis.renderer.ticks.template.disabled = true;
+        valueAxis.renderer.axisFills.template.disabled = true;
+        valueAxis.renderer.labels.template.fontSize = 12;
+        valueAxis.renderer.labels.template.fill = am4core.color("white");
+  
+  
+  
+        var series = chart.series.push(new am4charts.ColumnSeries());
+        series.dataFields.categoryX = "category";
+        series.dataFields.valueY = "value";
+        series.tooltipText = "{valueY.value}";
+        series.sequencedInterpolation = true;
+        series.fillOpacity = 0;
+        series.strokeOpacity = 1;
+        series.strokeDashArray = "1,3";
+        series.columns.template.width = 0.01;
+        series.tooltip.pointerOrientation = "horizontal";
+  
+        var bullet = series.bullets.create(am4charts.CircleBullet);
+  
+        chart.cursor = new am4charts.XYCursor();
+  
+        chart.scrollbarX = new am4core.Scrollbar();
+        chart.scrollbarY = new am4core.Scrollbar();
+  
+  
+      }); // end am4core.ready()
+ 

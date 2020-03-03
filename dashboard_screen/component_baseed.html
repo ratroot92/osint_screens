@@ -1,54 +1,478 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-    <style>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Hello, world!</title>
+</head>
+<style>
 
-      body{
-        background: url('Assets/background gradient.svg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        margin: 0!important;
-        padding: 0!important;
+</style>
+
+<body class="bg-dark">
+  <div class="container-fluid" id="cover">
+    <div class="row ">
+      <!-- <div class="col-md-1">
+
+
+
+
+      </div>
+      <div class="col-md-10  pt-3 pb-3" id="header">
+        <div class="row h-100">
+          <div class="col-md-4  h-100">
+            <div class="row h-100">
+              <div class="col-md-4 col-sm-6 h-100 custom_center custom_3px_border"></div>
+              <div class="col-md-4 col-sm-6 h-100 custom_center custom_3px_border">
+                <a class="text-white " style="font-size :20px;">DASHBOARD</a></div>
+              <div class="col-md-4 col-sm-6 h-100 custom_center custom_3px_border"><a
+                  class="text-white font_16">MONITOR</a></div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 custom_center custom_3px_border ">
+                <img src="Assets/logo.svg" height="100" width="150" class=" m-0 p-0" /></div>
+            </div>
+
+          </div>
+          <div class="col-md-4 h-100">
+            <div class="row h-100">
+              <div class="col-md-4 h-100 custom_center custom_3px_border"><a class="text-white
+                 font_16">EXPLORE</a></div>
+              <div class="col-md-4 h-100 custom_center custom_3px_border"><a class="text-white
+                 font_16 ">RETRIEVE</a></div>
+              <div class="col-md-4 h-100 custom_center custom_3px_border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div> -->
+<div class="col-md-12 pl-5 pr-5">
+  <nav class="navbar navbar-expand-lg " id="header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 ">
+      <div class="row">
+       
+          <div class="col-md-4 p-3">
+            <div class="row">
+              <div class="col-md-6  list list-inline custom_center "style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
+                <li class="nav-item">
+                <a class="btn-outline-warning btn  font-weight-bold" href="#" style="font-size:20px;color:white;">DASHBOARD</a>
+              </li></div>
+              <div class="col-md-6  list list-inline custom_center "style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
+                <li class="nav-item">
+                <a class="btn-outline-warning btn  font-weight-bold" href="#" style="font-size:20px;color:white;">MONITOR</a>
+              </li></div>
+            </div>
+          </div>
+          <div class="col-md-4 custom_center">
+          <img src="Assets/logo.svg" height="120" width="250" class=" m-0 p-0" />
+          </div>
+          <div class="col-md-4 p-3">
+            <div class="row">
+              <div class="col-md-6  list list-inline custom_center "style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
+                <li class="nav-item">
+                <a class="btn-outline-warning btn  font-weight-bold" href="#" style="font-size:20px;color:white;">FETCH</a>
+              </li></div>
+              <div class="col-md-6  list list-inline custom_center "style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
+                <li class="nav-item">
+                <a class="btn-outline-warning btn  font-weight-bold" href="#" style="font-size:20px;color:white;">RETRIEVE</a>
+              </li></div>
+            </div>
+          </div>
+        </div>
+     
+    </div>
+    <div class="col-md-2 "></div>
+    
+     
+    
       
      
-      }
-      #header{
-        background-image: url("Assets/header.svg")!important;
-        background-size: cover;
-        height: 110px;
-        width: 80%;
+    </div>
+  </nav>
+</div>
+    </div>
 
-      }
-    </style>
-  </head>
-  <body>
-   <div class="container-fluid">
-       <div class="row mt-2">
-           <div class="col-md-1"></div>
-           <div class="col-md-10" id="header"  style=" background-image: url("Assets/header.svg");">
-            <img src="Assets/Glow10.svg" class="m-0 p-0 " height="200" width="10" style="background-color:white"/>
-            <img src="Assets/Glow10.svg" class="m-0 p-0 " height="200" width="10" style="background-color:white"/>
-            <img src="Assets/Glow10.svg" class="m-0 p-0 " height="200" width="10" style="background-color:white"/>
-            
-           </div>
-           <div class="col-md-1"></div>
-       </div>
-   </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <div class="row mt-5">
+      <div class="col-md-2 col-sm-12 col-xs-12">
+
+        <div class="row">
+          <div class="col-md-12 ">
+
+            <!-- start of bars -->
+            <div class="left_nav m-0 p-0 " id="">
+
+              <div id="left_nav_text">
+                <div class="d-flex flex-row justify-content-between align-items-center ">
+                  <span class="text-white ml-3  font_9px" style="margin-top:5px;"> TIME 15:00 GMT</span>
+
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center ">
+                  <span class="text-white ml-3 font_9px"> DATE 02-03-2020 </span>
+
+                </div>
+
+              </div>
+              <div class="h-100 w-100 custom_center flex-column mt-2 notification_text_parent">
+                <div class="text-white  w-100 font-weight-bold font_12px left_nav_notification_text">NOTIFICATION</div>
+                <div id="custom_1" class=" h-100 w-100 p-1 pl-2 pr-2 " style="border-radius:0px 0px 50px 0px;">
+                  <div class="w-100     p-3 m-0 text-white text-wrap text-truncate notification_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ducimus fuga autem dolore labore
+                    tempore. Sunt, cumque eaque! Id ea animi quos unde, officiis cum facere. At inventore explicabo est!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ducimus fuga autem dolore labore
+                    tempore. Sunt, cumque eaque! Id ea animi quos unde, officiis cum facere. At inventore explicabo est!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of bars -->
+          </div>
+        </div>
+
+
+
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <!-- first button left  -->
+            <div class="left_buttons">
+              <div class="d-flex flex-row justify-content-lg-start align-items-center  " style="height:65px;">
+                <div class="  w-25 custom_center ml-2  h-100 ">
+                  <img src="fetch icon.svg" height="55" width="55" />
+                </div>
+
+                <div class="  w-25 custom_center  h-100 ">
+                  <span class="text text-white font-weight-bold  mt-4 ml-2"style="font-size:1vw;">FETCH</span>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- end first button left  -->
+
+
+            <!-- first button left  -->
+            <div class="left_buttons">
+              <div class="d-flex flex-row justify-content-lg-start align-items-center  " style="height:65px;">
+                <div class="  w-25 custom_center ml-2  h-100 ">
+                  <img src="analyze icon.svg" height="55" width="55" />
+                </div>
+
+                <div class="  w-25 custom_center  h-100 ">
+                  <span class="text text-white font-weight-bold  mt-4 ml-2"style="font-size:1vw;">ANALYZE</span>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- end first button left  -->
+
+
+            <!-- first button left  -->
+            <div class="left_buttons">
+              <div class="d-flex flex-row justify-content-lg-start align-items-center  " style="height:65px;">
+                <div class="  w-25 custom_center ml-2  h-100 ">
+                  <img src="search icon.svg" height="55" width="55" />
+                </div>
+
+                <div class="  w-25 custom_center  h-100 ">
+                  <span class="text text-white font-weight-bold  mt-4 ml-2"style="font-size:1vw;">SEARCH</span>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- end first button left  -->
+
+
+
+            <!-- first button left  -->
+            <div class="left_buttons">
+              <div class="d-flex flex-row justify-content-lg-start align-items-center  " style="height:65px;">
+                <div class="  w-25 custom_center ml-2  h-100 ">
+                  <img src="generate icon.svg" height="55" width="55" />
+                </div>
+
+                <div class="  w-25 custom_center  h-100 ">
+                  <span class="text text-white font-weight-bold  mt-4 ml-3" style="font-size:1vw;">GENERATE</span>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- end first button left  -->
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- end of header  -->
+
+      <!-- put pages content here  -->
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 col-sm-12 custom_center glowing_border charts_parent_div">
+                <p class="text-white charts_header">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 col-sm-12  glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_1" class="m-0 p-3 height_width_100"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 col-sm-12 custom_center glowing_border charts_parent_div">
+                <p class="text-white charts_header">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 col-sm-12 glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_2" class="m-0 p-3 height_width_100"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 col-sm-12 custom_center glowing_border charts_parent_div">
+                <p class="text-white charts_header">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 col-sm-12 glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_3" class="m-0 p-3 height_width_100"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 col-sm-12 custom_center glowing_border charts_parent_div">
+                <p class="text-white custom_center    charts_header">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 col-sm-12 glowing_border " style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_4" class="m-0 p-3  height_width_100"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content  -->
+
+
+
+      <!-- start of right side  -->
+      <div class="col-md-2 custom_div_3">
+        <!-- row 1 start -->
+        <div class="row ">
+          <div class="col-md-12 w-100">
+
+            <div class="d-flex flex-column  w-100 justify-content-center align-items-center " style="height:49px;">
+              <input class="form-control" placeholder="enter name here" style="height: 27px;width: 160px; ">
+            </div>
+
+          </div>
+
+        </div>
+        <!-- row 1 end -->
+
+
+        <!-- start row 2 -->
+        <div class="row ">
+          <div class="col-md-12 w-100">
+
+            <div class="d-flex flex-row  w-100 justify-content-start align-items-center " style="height:110px;">
+              <div class="text-white " style="height:49px;width: 70px;margin-left: 69px;border-radius: 1px;">
+                <div class="h-100 w-100 text-white w-100 h-100 p-1  " style="font-size:10px;overflow:hidden">
+                  sadasdads
+                </div>
+              </div>
+              <div class=" " style="hieght:60px;width:60px;">
+                <img src="Assets/target mark.svg" height="60" width="60" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- start row 3 -->
+        <div class="row mt-2">
+          <div class="col-md-12 ">
+
+            <div class="d-flex flex-row  w-100 justify-content-start align-items-center " style="height:82px;">
+              <div class="text-white   " style="width: 70px;margin-left: 69px;border-radius: 1px;">
+                <div class="h-100 w-100 text-white w-100 h-100 p-1 custom_center " style="font-size:10px;">
+                  <img src="Assets/glob icon.svg" class="" height="40" width="40" style="backg" />
+                </div>
+              </div>
+              <div class=" text-white  " style="height: 73px;width: 88px;">
+                <div class="h-100 w-100     text-white w-100 h-100  p-2" style="font-size:10px;overflow:hidden">
+                  sadasdadsasdasdsadadasdassadasdsadadasd
+                  asdasdsadsad
+                  asdasdsadsad
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- end row 3 -->
+
+
+
+
+        <!-- start row 4 -->
+        <div class="row mt-2">
+          <div class="col-md-12 ">
+
+            <div class="d-flex flex-row    w-100 justify-content-center align-items-center " style="height:50px;">
+
+              <div class="progress">
+                <div class="progress-bar progress-bar-secondary" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100" style="width:60%">
+                  60% Complete (warning)
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- start of row 5 -->
+        <div class="row mt-2">
+          <div class="col-md-12  custom_center" style="height:100px;">
+            <div class="" style="height: 82px;width: 160px;border-radius: 5px;">
+              <div class="text-danger font-weight-bold  p-2" style="font-size:12px;overflow:hidden">
+                Alert:
+                <div class="text-white " style="overflow:hidden;font-size:10px;">
+                  asdsadsadsadaasdasdasddsad
+                  asdsadsadsadaasdasdasddsadasdsad
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end row 5 -->
+
+        <!-- start of row 5 -->
+        <div class="row mt-2">
+          <div class="col-md-12  m-0 p-0 " style="height:150px;">
+            <div class=" h-100  ml-auto mr-auto"
+              style="width:150px;border-radius: 5px;padding-right:30px;padding-left:0px;">
+              <div class="text-danger font-weight-bold  " style="font-size:12px;overflow:hidden">
+                Alert:
+                <div class="text-white " style="overflow:hidden;font-size:10px;">
+                  asdsadsadsadaasdasdasddsad
+                  asdsadsadsadaasdasdasddsadasdsad
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end row 5 -->
+
+
+
+
+
+      </div>
+      <!-- end of right side  -->
+
+    </div>
+    <!-- start of footer  -->
+    <div class="row ">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 glowing_border" style="border-radius:5px;">
+        <div class="row">
+          <div class="col-md-2 m-0 p-3">
+            <div class="custom_center footer_div_1 " style="">
+              <div class="text-center  text-white " style="font-size: 10px;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos tenetur facilis doloremque.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 m-0 p-3 ">
+            <div id="chart_5" class="m-0 p-0 " style="">
+            </div>
+          </div>
+          <div class="col-md-6  m-0 p-3 ">
+            <div class="row">
+              <div class="col-md-4 ">
+                <div id="chart_6" class="m-0 p-0 " style="">
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div id="chart_7" class="m-0 p-0 " style="">
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div id="chart_8" class="m-0 p-0 " style="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 text-white">
+
+      </div>
+    </div>
+  </div>
+  <!-- end of footer  -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/uxl/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+
+  <!-- Resources -->
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+   
+<script src="chart.js"></script>
+
+</body>
+
 </html>
