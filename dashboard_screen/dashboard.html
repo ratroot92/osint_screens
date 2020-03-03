@@ -1,417 +1,1452 @@
-
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <style>
- 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-      body{
-        background: url('background gradient.svg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        margin: 0!important;
-        padding: 0!important;
-      
-     
-      }
+  <title>Hello, world!</title>
+</head>
+<style>
+  body {
+    background: url('background gradient.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 !important;
+    padding: 0 !important;
 
-#header{
- 
-    height:120px;
-    border-radius: 1px 1px 10px 10px ;
+
+  }
+
+  #header {
+
+  
+    border:1px solid #1cb5e0;
+    border-radius: 1px 1px 10px 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgb(57, 56, 66) 0%, rgb(101, 101, 241) 35%, rgb(171, 183, 216) 100%);
-}
-.custom_center{
+  
+    background: #202f33;
+  }
+
+  .custom_center {
     justify-content: center;
-    align-items:center;
+    align-items: center;
     display: flex;
-}
-    
-.glowing_border{
-    border: 1px solid #ffffff; /* some kind of blue border */
+  }
+
+  .glowing_border {
+    border: 1px solid #1cb5e0;
     -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-box-shadow: 0px 0px 4px #ffffff;
-       -moz-box-shadow: 0px 0px 4px #ffffff;
-            box-shadow: 0px 0px 4px #ffffff; 
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 4px #1cb5e0;
+    -moz-box-shadow: 0px 0px 4px #1cb5e0;
+    box-shadow: 0px 0px 4px #1cb5e0;
+  }
+
+  #bar_1 {
+    height: 250px;
+    width: 100%;
+    border-radius: 0px 10px 0px 0px;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 89%, 92% 100%, 0 100%, 0 100%, 0 0);
+    background: #1cb5e0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #1cb5e0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #1cb5e0);
+  }
+
+  #bar_2 {
+    height: 250px;
+    width: 95%;
+    border: 1px solid yellow;
+    border-radius: 0px 10px 0px 0px;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 86%, 89% 100%, 0 100%, 0 100%, 0 0);
+
+  }
+
+  #bar_3 {
+    height: 250px;
+    width: 95%;
+    border-right: 1px solid yellow;
+    border-top: 1px solid yellow;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 10px;
+    border-radius: 0px 10px 0px 0px;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 83%, 86% 100%, 0 100%, 0 100%, 0 0);
+  }
+
+  #bar_4 {
+    height: 90%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 0px 10px 0px 0px;
+    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 0, 100% 80%, 83% 100%, 0 100%, 0 100%, 0 0);
+
+  }
+
+  #bar_5 {
+    height: 100%;
+    width: 95%;
+    border-left: 1px solid rgb(247, 247, 243);
+    float: right;
+
+  }
+
+  #bar_6 {
+    height: 100%;
+    width: 95%;
+    border-left: 1px solid white;
+    float: right;
+    font-size: 12px;
+    background: #1cb5e0;
+    background: -webkit-linear-gradient(to right, #283E51, #1cb5e0);
+    background: linear-gradient(to right, #283E51, #1cb5e0);
+   
+
+
+  }
+
+  .bar_7 {
+    -webkit-clip-path: polygon(52% 0, 76% 57%, 100% 58%, 100% 100%, 68% 100%, 61% 82%, 0 81%, 0 0);
+    clip-path: polygon(52% 0, 76% 57%, 100% 58%, 100% 100%, 68% 100%, 61% 82%, 0 81%, 0 0);
+    height: 70px;
+    background-color: #1cb5e0 !important;
+    opacity: 0.9;
+  }
+
+#tri_{
+  clip-path: polygon(0 0, 54% 0, 90% 100%, 0 100%)!important;
+  background-color: #1cb5e0;
+  height: 35px;
+  width: 150px;
+  position: relative;
+  font-weight: bold;
 }
 
-<style>
-    #chart_1 {
-      width: 100%;
-      height: 100%!important;
-    }
-  </style>
+
+
+</style>
+
 <body class="bg-dark">
-       <div class="container-fluid" id="cover">
-           <div class="row " style="">
-               <div class="col-md-1" ></div>
-               <div class="col-md-10 "id="header">
-                <div class="row h-100">
-                    <div class="col-md-4 h-100">
-                        <div class="row h-100">
-                            <div class="col-md-4 h-100 custom_center" style="border-right:1px solid white;"></div>
-                            <div class="col-md-4 h-100 custom_center" style="border-right:1px solid white;"><a class="text-white" style="font-size :20px;">DASHBOARD</a></div>
-                            <div class="col-md-4 h-100 custom_center" style="border-right:1px solid white;"><a class="text-white" style="font-size :16px;">MONITOR</a></div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                          <div class="col-md-12 custom_center  "style="border-right:1px solid white">  
-                              <img src="Assets/logo.svg" height="100" width="150" class=" m-0 p-0" /></div>
-                        </div>
+  <div class="container-fluid" id="cover">
+    <div class="row " style="">
+      <div class="col-md-1">
 
-                    </div>
-                    <div class="col-md-4 h-100">
-                        <div class="row h-100">
-                            <div class="col-md-4 h-100 custom_center" style="border-right:1px solid white;"><a class="text-white" style="font-size :16px;">EXPLORE</a></div>
-                            <div class="col-md-4 h-100 custom_center" style="border-right:1px solid white;"><a class="text-white" style="font-size :16px;">RETRIEVE</a></div>
-                            <div class="col-md-4 h-100 custom_center" style="border-right:0px solid white;"></div>
-                        </div>
-                    </div>
-                </div>
-               </div>
-               <div class="col-md-1"></div>
+
+
+
+      </div>
+      <div class="col-md-10  pt-3 pb-3" id="header">
+        <div class="row h-100">
+          <div class="col-md-4  h-100">
+            <div class="row h-100">
+              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;"></div>
+              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;">
+                <a class="text-white "style="font-size :20px;">DASHBOARD</a></div>
+              <div class="col-md-4 col-sm-6 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
+                  style="font-size :16px;">MONITOR</a></div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 custom_center  " style="border-right:3px solid #1cb5e0">
+                <img src="Assets/logo.svg" height="100" width="150" class=" m-0 p-0" /></div>
+            </div>
+
+          </div>
+          <div class="col-md-4 h-100">
+            <div class="row h-100">
+              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
+                  style="font-size :16px;">EXPLORE</a></div>
+              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"><a class="text-white"
+                  style="font-size :16px;">RETRIEVE</a></div>
+              <div class="col-md-4 h-100 custom_center" style="border-right:3px solid #1cb5e0;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+
+    </div>
+
+
+    <div class="row mt-5">
+      <div class="col-md-2">
+
+        <div class="row">
+          <div class="col-md-12">
+           
+            <div id="tri_" style="background-image: url('');">
+              <div class="d-flex flex-row justify-content-between align-items-center ">
+               <span class="text-white ml-2 "style="font-size:9px;margin-top:5px;"> TIME 15:00 GMT</span>
                
-           </div>
-
-
-           <div class="row mt-5">
-               <div class="col-md-2">
-
-               </div>
-               <div class="col-md-8">
-                   <div class="row">
-                       <div class="col-md-6 ">
-                           <div class="row">
-                               <div class="col-md-1 custom_center glowing_border "style=";height:270px;border-radius:15px 0px 0px 15px;">
-                               <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social Media </p>
-                               </div>
-                               <div class="col-md-11  glowing_border"style=";border-radius:0px 15px 15px 0px;">
-                                <div id="chart_1" class="m-0 p-0 " style="height:100%;height:100%;"></div>
-                               </div>
-
-                           </div>
-                       </div>
-                       <div class="col-md-6 ">
-                           <div class="row">
-                               <div class="col-md-1 custom_center glowing_border "style=";height:270px;border-radius:15px 0px 0px 15px;">
-                               <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social Media </p>
-                               </div>
-                               <div class="col-md-11 glowing_border"style=";border-radius:0px 15px 15px 0px;">
-                                <div id="chart_2" class="m-0 p-0 " style="height:100%;height:100%;"></div>
-                               </div>
-
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row">
-                    <div class="col-md-6  ">
-                        <div class="row">
-                            <div class="col-md-1 custom_center glowing_border "style=";height:270px;border-radius:15px 0px 0px 15px;">
-                               <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social Media </p>
-                            </div>
-                            <div class="col-md-11 glowing_border"style=";border-radius:0px 15px 15px 0px;">
-                                <div id="chart_3" class="m-0 p-0 " style="height:100%;height:100%;"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="row">
-                            <div class="col-md-1 custom_center glowing_border "style=";height:270px;border-radius:15px 0px 0px 15px;">
-                               <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social Media </p>
-                            </div>
-                            <div class="col-md-11 glowing_border"style=";border-radius:0px 15px 15px 0px;">
-asd
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                   </div>
-               </div>
-               <div class="col-md-2"></div>
-           </div>
-       </div>   
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-center ">
+                <span class="text-white ml-2"style="font-size:9px;"> DATE 02-03-2020 </span>
                
+              </div>
+            
+            </div>
+            <!-- start of bars -->
+            <div id="bar_1">
+              <div id="bar_2">
+                <div id="bar_3">
+                  <p class="text-white m-0 p-0 ml-4 font-weight-bold" style="font-size:13px;letter-spacing:5px">
+                    NOTIFICATION</p>
+                  <div id="bar_4">
+                    <div id="bar_5">
+                      <div id="bar_6" class="text-wrap text-white ">
+                        <div class="m-0 p-1 mt-3  w-100 bottom-align-text font-weight-bold "
+                          style="font-size:13px;border-bottom:1px solid white" class="text-white">
+                          Main Headline ....
+                        </div>
+
+                        <div class="m-0 p-1" style="font-size:12px;color:white">
+                          Lorem ipsum dolor sit amet consectetur adipisicing deleniti, itaque cumque velit?
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- end of bars -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 p-3">
+            <div class=" bar_7" id="">
+              <div class="w-100 h-100 d-flex flex-row ">
+                <div class=" bg-dark custom_center " style="height:90%;width:60px;">
+                  <img src="generate icon.svg"  style="height:40px;width:40px;" />
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/uxl/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- 
+                </div>
+          <div class="" style="position: relative;">
+            <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">FETCH</div>
+          </div>
+              </div>
+            </div>
+            <div class=" bar_7" id="">
+              <div class="w-100 h-100 d-flex flex-row">
+                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
+                  <img src="analyze icon.svg" style="height:40px;width:40px;" />
 
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-<script>
-    am4core.ready(function() {
-    
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
-    // Themes end
-    
-    // Create chart instance
-    var chart = am4core.create("chart_1", am4charts.PieChart);
-    
-    // Add data
-    chart.data = [ {
-      "source": "Twitter",
-      "value": 501.9
-   
-    }, {
-      "source": "Linkedin",
-      "value": 301.9
-    }, {
-      "source": "Facebook",
-      "value": 201.1
-    }, {
-      "source": "Instagram",
-      "value": 165.8
-    },  ];
-    
-    // Set inner radius
-    chart.innerRadius = am4core.percent(50);
-    
-    // Add and configure Series
-    var pieSeries = chart.series.push(new am4charts.PieSeries());
-    pieSeries.dataFields.value = "value";
-    pieSeries.dataFields.category = "source";
-    pieSeries.slices.template.stroke = am4core.color("#fff");
-    pieSeries.slices.template.strokeWidth = 2;
-    pieSeries.slices.template.strokeOpacity = 1;
-    pieSeries.labels.template.fill = am4core.color("white");
-    pieSeries.slices.template.tooltipText = "{source}: {value.value}";
-    pieSeries.labels.template.fontSize = 12;
-    
-var rgm = new am4core.RadialGradientModifier();
-rgm.brightnesses.push(-0.8, -0.8, -0.5, 0, - 0.5);
-pieSeries.slices.template.fillModifier = rgm;
-pieSeries.slices.template.strokeModifier = rgm;
-pieSeries.slices.template.strokeOpacity = 0.4;
-pieSeries.slices.template.strokeWidth = 0;
-    // This creates initial animation
-    pieSeries.hiddenState.properties.opacity = 1;
-    pieSeries.hiddenState.properties.endAngle = -90;
-    pieSeries.hiddenState.properties.startAngle = -90;
-    
-pieSeries.colors.list = [
-am4core.color("#845EC2"),
-am4core.color("#D65DB1"),
-am4core.color("#FF6F91"),
-am4core.color("#FF9671"),
-am4core.color("#FFC75F"),
-am4core.color("#F9F871"),
-];
-    }); // end am4core.ready()
-    </script>
 
-    <!-- Chart code -->
-<script>
-    am4core.ready(function() {
+                </div>
+                <div class="" style="position: relative;">
+                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">ANALYZE</div>
+                </div>
+              </div>
+            </div>
+            <div class=" bar_7" id="">
+              <div class="w-100 h-100 d-flex flex-row">
+                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
+                  <img src="fetch icon.svg" style="height:40px;width:40px;" />
+
+
+                </div>
+                <div class="" style="position: relative;">
+                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">SEARCH</div>
+                </div>
+              </div>
+            </div>
+            <div class=" bar_7" id="">
+              <div class="w-100 h-100 d-flex flex-row">
+                <div class=" bg-dark custom_center" style="height:90%;width:60px;">
+                  <img src="search icon.svg" style="height:40px;width:40px;" />
+
+
+                </div>
+                <div class="" style="position: relative;">
+                  <div class="text-white font-weight-bold "style="position:absolute;top:35px;left:10px;">GENERATE</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 custom_center glowing_border "
+                style="height:270px;border-radius:15px 0px 0px 15px;">
+                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11  glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_1" class="m-0 p-3" style="height:100%;width:100%"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 custom_center glowing_border "
+                style="height:270px;border-radius:15px 0px 0px 15px;">
+                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_2" class="m-0 p-3" style="height:100%;width:100%"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 custom_center glowing_border "
+                style="height:270px;border-radius:15px 0px 0px 15px;">
+                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 glowing_border" style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_3" class="m-0 p-3" style="height:100%;width:100%"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-1 custom_center glowing_border "
+                style="height:270px;border-radius:15px 0px 0px 15px;">
+                <p class="text-white " style="writing-mode: vertical-rl;font-size:20px;letter-spacing: 2px;">Social
+                  Media </p>
+              </div>
+              <div class="col-md-11 glowing_border " style="border-radius:0px 15px 15px 0px;">
+                <div id="chart_4" class="m-0 p-3 " style="height:100%;width:100%"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
-    // Themes end
-    
-    var chart = am4core.create("chart_2", am4charts.XYChart);
-    
-    var data = [];
-    var value = 120;
-    
-    var names = ["Raina",
-      "Demarcus",
-      "Carlo",
-      "Jacinda",
-      "Richie",
-      "Antony",
-      "Amada",
-      "Idalia",
-      "Janella",
-      "Marla",
-      "Curtis",
-      "Shellie",
-      "Meggan",
-      "Nathanael",
-      "Jannette",
-      "Tyrell",
-      "Sheena",
-      "Maranda",
-      "Briana",
-      "Rosa",
-      "Rosanne",
-      "Herman",
-      "Wayne",
-      "Shamika",
-      "Suk",
-      "Clair",
-      "Olivia",
-      "Hans",
-      "Glennie",
-    ];
-    
-    for (var i = 0; i < names.length; i++) {
-      value += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
-      data.push({ category: names[i], value: value });
+    <div class="col-md-2">
+    <div class="row">
+      <div class="col-md-12">
+        
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <div class="row ">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 glowing_border"  style="border-radius:5px;">
+      <div class="row">
+        <div class="col-md-2 m-0 p-3">
+          <div class="custom_center  "style="border-right :15px solid #1cb5e0;border-left :15px solid #1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;height:100%;">
+            <div class="text-center  text-white " style="font-size: 10px;">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos tenetur facilis doloremque.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 m-0 p-3 ">
+          <div id="chart_5" class="m-0 p-0 " style="border-right :15px solid#1cb5e0;border-left :15px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px; height:100%;width:100%"></div>
+        </div>
+        <div class="col-md-6  m-0 p-3 " style="">
+          <div class="row">
+            <div class="col-md-4 "  style="">
+              <div id="chart_6" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
+            </div>
+            <div class="col-md-4 "  style="">
+              <div id="chart_7" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
+            </div>
+            <div class="col-md-4 "  style="">
+              <div id="chart_8" class="m-0 p-0 " style="border-right :5px solid#1cb5e0;border-left :5px solid#1cb5e0;border-top:1px solid#1cb5e0;border-bottom:1px solid#1cb5e0;border-radius:5px;"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 text-white">
+      asdasd
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/uxl/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+
+  <!-- Resources -->
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+  <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      // Create chart instance
+      var chart = am4core.create("chart_1", am4charts.PieChart);
+
+      // Add data
+      chart.data = [{
+        "source": "Twitter",
+        "value": 501.9
+
+      }, {
+        "source": "Linkedin",
+        "value": 301.9
+      }, {
+        "source": "Facebook",
+        "value": 201.1
+      }, {
+        "source": "Instagram",
+        "value": 165.8
+      }, ];
+
+// Responsive
+chart.responsive.enabled = true;
+chart.responsive.rules.push({
+  relevant: function(target) {
+    if (target.pixelWidth <= 400) {
+      return true;
     }
-    
-    chart.data = data;
-    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-    categoryAxis.renderer.grid.template.location = 0;
-    categoryAxis.dataFields.category = "category";
-    categoryAxis.renderer.minGridDistance = 15;
-    categoryAxis.renderer.grid.template.location = 0.5;
-    categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
-    categoryAxis.renderer.labels.template.rotation = -90;
-    categoryAxis.renderer.labels.template.horizontalCenter = "left";
-    categoryAxis.renderer.labels.template.location = 0.5;
-    categoryAxis.renderer.labels.template.fontSize=12;
-    categoryAxis.renderer.labels.template.fill = am4core.color("white");
-    
-    categoryAxis.renderer.labels.template.adapter.add("dx", function(dx, target) {
-        return -target.maxRight / 2;
-    })
-    
-    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
-    valueAxis.tooltip.disabled = true;
-    valueAxis.renderer.ticks.template.disabled = true;
-    valueAxis.renderer.axisFills.template.disabled = true;
-    valueAxis.renderer.labels.template.fontSize=12;
-    valueAxis.renderer.labels.template.fill = am4core.color("white");
+    return false;
+  },
+  state: function(target, stateId) {
+    if (target instanceof am4charts.PieSeries) {
+      var state = target.states.create(stateId);
 
+      var labelState = target.labels.template.states.create(stateId);
+      labelState.properties.disabled = true;
 
+      var tickState = target.ticks.template.states.create(stateId);
+      tickState.properties.disabled = true;
+      return state;
+    }
 
-    var series = chart.series.push(new am4charts.ColumnSeries());
-    series.dataFields.categoryX = "category";
-    series.dataFields.valueY = "value";
-    series.tooltipText = "{valueY.value}";
-    series.sequencedInterpolation = true;
-    series.fillOpacity = 0;
-    series.strokeOpacity = 1;
-    series.strokeDashArray = "1,3";
-    series.columns.template.width = 0.01;
-    series.tooltip.pointerOrientation = "horizontal";
-    
-    var bullet = series.bullets.create(am4charts.CircleBullet);
-    
-    chart.cursor = new am4charts.XYCursor();
-    
-    chart.scrollbarX = new am4core.Scrollbar();
-    chart.scrollbarY = new am4core.Scrollbar();
-    
-    
+    return null;
+  }
+});
+      // Set inner radius
+      chart.innerRadius = am4core.percent(50);
+
+      // Add and configure Series
+      var pieSeries = chart.series.push(new am4charts.PieSeries());
+      pieSeries.dataFields.value = "value";
+      pieSeries.dataFields.category = "source";
+      pieSeries.slices.template.stroke = am4core.color("#fff");
+      pieSeries.slices.template.strokeWidth = 2;
+      pieSeries.slices.template.strokeOpacity = 1;
+      pieSeries.labels.template.fill = am4core.color("white");
+      pieSeries.slices.template.tooltipText = "{source}: {value.value}";
+      pieSeries.labels.template.fontSize = 12;
+
+      var rgm = new am4core.RadialGradientModifier();
+      rgm.brightnesses.push(-0.8, -0.8, -0.5, 0, -0.5);
+      pieSeries.slices.template.fillModifier = rgm;
+      pieSeries.slices.template.strokeModifier = rgm;
+      pieSeries.slices.template.strokeOpacity = 0.4;
+      pieSeries.slices.template.strokeWidth = 0;
+      // This creates initial animation
+      pieSeries.hiddenState.properties.opacity = 1;
+      pieSeries.hiddenState.properties.endAngle = -90;
+      pieSeries.hiddenState.properties.startAngle = -90;
+
+      pieSeries.colors.list = [
+        am4core.color("#845EC2"),
+        am4core.color("#D65DB1"),
+        am4core.color("#FF6F91"),
+        am4core.color("#FF9671"),
+        am4core.color("#FFC75F"),
+        am4core.color("#F9F871"),
+      ];
     }); // end am4core.ready()
-    </script>
-    
-    <script>
-        am4core.ready(function() {
-        
-        // Themes begin
-        am4core.useTheme(am4themes_dark);
-        am4core.useTheme(am4themes_animated);
-        // Themes end
-        
-        
-        
-        // Create chart instance
-        var chart = am4core.create("chart_3", am4charts.RadarChart);
-        
-        // Add data
-        chart.data = [{
-          "category": "Research",
-          "value": 80,
-          "full": 100
-        }, {
-          "category": "Marketing",
-          "value": 35,
-          "full": 100
-        }, {
-          "category": "Distribution",
-          "value": 92,
-          "full": 100
-        }, {
-          "category": "Human Resources",
-          "value": 68,
-          "full": 100
-        }];
-        
-        // Make chart not full circle
-        chart.startAngle = -90;
-        chart.endAngle = 180;
-        chart.innerRadius = am4core.percent(50);
-        
-        // Set number format
-        chart.numberFormatter.numberFormat = "#.#'%'";
-        
-        // Create axes
-        var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
-        categoryAxis.dataFields.category = "category";
-        categoryAxis.renderer.grid.template.location = 0;
-        categoryAxis.renderer.grid.template.strokeOpacity = 0;
-        categoryAxis.renderer.labels.template.horizontalCenter = "right";
-        categoryAxis.renderer.labels.template.fontWeight = 500;
-        categoryAxis.renderer.labels.template.fontSize = 12;
- 
-        categoryAxis.renderer.labels.template.adapter.add("fill", function(fill, target) {
-          return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
+  </script>
+
+  <!-- Chart code -->
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_2", am4charts.XYChart);
+
+      var data = [];
+      var value = 120;
+
+      var names = ["Raina",
+        "Demarcus",
+        "Carlo",
+        "Jacinda",
+        "Richie",
+        "Antony",
+        "Amada",
+        "Idalia",
+        "Janella",
+        "Marla",
+        "Curtis",
+        "Shellie",
+        "Meggan",
+        "Nathanael",
+        "Jannette",
+        "Tyrell",
+        "Sheena",
+        "Maranda",
+        "Briana",
+        "Rosa",
+        "Rosanne",
+        "Herman",
+        "Wayne",
+        "Shamika",
+        "Suk",
+        "Clair",
+        "Olivia",
+        "Hans",
+        "Glennie",
+      ];
+
+      for (var i = 0; i < names.length; i++) {
+        value += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+        data.push({
+          category: names[i],
+          value: value
         });
-        categoryAxis.renderer.minGridDistance = 10;
-        
-        var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
-        valueAxis.renderer.grid.template.strokeOpacity = 0;
-        valueAxis.min = 0;
-        valueAxis.max = 100;
-        valueAxis.strictMinMax = true;
-        
-        // Create series
-        var series1 = chart.series.push(new am4charts.RadarColumnSeries());
-        series1.dataFields.valueX = "full";
-        series1.dataFields.categoryY = "category";
-        series1.clustered = false;
-        series1.columns.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
-        series1.columns.template.fillOpacity = 0.08;
-        series1.columns.template.cornerRadiusTopLeft = 20;
-        series1.columns.template.strokeWidth = 0;
-        series1.columns.template.radarColumn.cornerRadius = 20;
-        
-        var series2 = chart.series.push(new am4charts.RadarColumnSeries());
-        series2.dataFields.valueX = "value";
-        series2.dataFields.categoryY = "category";
-        series2.clustered = false;
-        series2.columns.template.strokeWidth = 0;
-        series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
-        series2.columns.template.radarColumn.cornerRadius = 20;
-        
-        series2.columns.template.adapter.add("fill", function(fill, target) {
-          return chart.colors.getIndex(target.dataItem.index);
+      }
+
+      chart.data = data;
+      var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+      categoryAxis.renderer.grid.template.location = 0;
+      categoryAxis.dataFields.category = "category";
+      categoryAxis.renderer.minGridDistance = 15;
+      categoryAxis.renderer.grid.template.location = 0.5;
+      categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
+      categoryAxis.renderer.labels.template.rotation = -90;
+      categoryAxis.renderer.labels.template.horizontalCenter = "left";
+      categoryAxis.renderer.labels.template.location = 0.5;
+      categoryAxis.renderer.labels.template.fontSize = 12;
+      categoryAxis.renderer.labels.template.fill = am4core.color("white");
+
+      categoryAxis.renderer.labels.template.adapter.add("dx", function (dx, target) {
+        return -target.maxRight / 2;
+      })
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.labels.template.fontSize = 12;
+      valueAxis.renderer.labels.template.fill = am4core.color("white");
+
+
+
+      var series = chart.series.push(new am4charts.ColumnSeries());
+      series.dataFields.categoryX = "category";
+      series.dataFields.valueY = "value";
+      series.tooltipText = "{valueY.value}";
+      series.sequencedInterpolation = true;
+      series.fillOpacity = 0;
+      series.strokeOpacity = 1;
+      series.strokeDashArray = "1,3";
+      series.columns.template.width = 0.01;
+      series.tooltip.pointerOrientation = "horizontal";
+
+      var bullet = series.bullets.create(am4charts.CircleBullet);
+
+      chart.cursor = new am4charts.XYCursor();
+
+      chart.scrollbarX = new am4core.Scrollbar();
+      chart.scrollbarY = new am4core.Scrollbar();
+
+
+    }); // end am4core.ready()
+  </script>
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_dark);
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+
+
+      // Create chart instance
+      var chart = am4core.create("chart_3", am4charts.RadarChart);
+
+      // Add data
+      chart.data = [{
+        "category": "Research",
+        "value": 80,
+        "full": 100
+      }, {
+        "category": "Marketing",
+        "value": 35,
+        "full": 100
+      }, {
+        "category": "Distribution",
+        "value": 92,
+        "full": 100
+      }, {
+        "category": "Human Resources",
+        "value": 68,
+        "full": 100
+      }];
+
+      // Make chart not full circle
+      chart.startAngle = -90;
+      chart.endAngle = 180;
+      chart.innerRadius = am4core.percent(50);
+
+      // Set number format
+      chart.numberFormatter.numberFormat = "#.#'%'";
+
+      // Create axes
+      var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+      categoryAxis.dataFields.category = "category";
+      categoryAxis.renderer.grid.template.location = 0;
+      categoryAxis.renderer.grid.template.strokeOpacity = 0;
+      categoryAxis.renderer.labels.template.horizontalCenter = "right";
+      categoryAxis.renderer.labels.template.fontWeight = 500;
+      categoryAxis.renderer.labels.template.fontSize = 12;
+
+      categoryAxis.renderer.labels.template.adapter.add("fill", function (fill, target) {
+        return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
+      });
+      categoryAxis.renderer.minGridDistance = 10;
+
+      var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+      valueAxis.renderer.grid.template.strokeOpacity = 0;
+      valueAxis.min = 0;
+      valueAxis.max = 100;
+      valueAxis.strictMinMax = true;
+
+      // Create series
+      var series1 = chart.series.push(new am4charts.RadarColumnSeries());
+      series1.dataFields.valueX = "full";
+      series1.dataFields.categoryY = "category";
+      series1.clustered = false;
+      series1.columns.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+      series1.columns.template.fillOpacity = 0.08;
+      series1.columns.template.cornerRadiusTopLeft = 20;
+      series1.columns.template.strokeWidth = 0;
+      series1.columns.template.radarColumn.cornerRadius = 20;
+
+      var series2 = chart.series.push(new am4charts.RadarColumnSeries());
+      series2.dataFields.valueX = "value";
+      series2.dataFields.categoryY = "category";
+      series2.clustered = false;
+      series2.columns.template.strokeWidth = 0;
+      series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
+      series2.columns.template.radarColumn.cornerRadius = 20;
+
+      series2.columns.template.adapter.add("fill", function (fill, target) {
+        return chart.colors.getIndex(target.dataItem.index);
+      });
+
+      // Add cursor
+      chart.cursor = new am4charts.RadarCursor();
+
+    }); // end am4core.ready()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_4", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0;
+
+      chart.padding(0, 0, 0, 0);
+
+      chart.zoomOutButton.disabled = true;
+
+      var data = [];
+      var visits = 10;
+      var i = 0;
+
+      for (i = 0; i <= 30; i++) {
+        visits -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+        data.push({
+          date: new Date().setSeconds(i - 30),
+          value: visits
         });
-        
-        // Add cursor
-        chart.cursor = new am4charts.RadarCursor();
-        
-        }); // end am4core.ready()
-        </script>
+      }
+
+      chart.data = data;
+
+      var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+      dateAxis.renderer.grid.template.location = 0;
+      dateAxis.renderer.minGridDistance = 30;
+      dateAxis.dateFormats.setKey("second", "ss");
+      dateAxis.periodChangeDateFormats.setKey("second", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("minute", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("hour", "[bold]h:mm a");
+      dateAxis.renderer.inside = true;
+      dateAxis.renderer.axisFills.template.disabled = true;
+      dateAxis.renderer.ticks.template.disabled = true;
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.interpolationDuration = 500;
+      valueAxis.rangeChangeDuration = 500;
+      valueAxis.renderer.inside = true;
+      valueAxis.renderer.minLabelPosition = 0.05;
+      valueAxis.renderer.maxLabelPosition = 0.95;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+
+      var series = chart.series.push(new am4charts.LineSeries());
+      series.dataFields.dateX = "date";
+      series.dataFields.valueY = "value";
+      series.interpolationDuration = 500;
+      series.defaultState.transitionDuration = 0;
+      series.tensionX = 0.8;
+
+      chart.events.on("datavalidated", function () {
+        dateAxis.zoom({
+          start: 1 / 15,
+          end: 1.2
+        }, false, true);
+      });
+
+      dateAxis.interpolationDuration = 500;
+      dateAxis.rangeChangeDuration = 500;
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          if (interval) {
+            clearInterval(interval);
+          }
+        } else {
+          startInterval();
+        }
+      }, false);
+
+      // add data
+      var interval;
+
+      function startInterval() {
+        interval = setInterval(function () {
+          visits =
+            visits + Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          var lastdataItem = series.dataItems.getIndex(series.dataItems.length - 1);
+          chart.addData({
+              date: new Date(lastdataItem.dateX.getTime() + 1000),
+              value: visits
+            },
+            1
+          );
+        }, 1000);
+      }
+
+      startInterval();
+
+      // all the below is optional, makes some fancy effects
+      // gradient fill of the series
+      series.fillOpacity = 1;
+      var gradient = new am4core.LinearGradient();
+      gradient.addColor(chart.colors.getIndex(0), 0.2);
+      gradient.addColor(chart.colors.getIndex(0), 0);
+      series.fill = gradient;
+
+      // this makes date axis labels to fade out
+      dateAxis.renderer.labels.template.adapter.add("fillOpacity", function (fillOpacity, target) {
+        var dataItem = target.dataItem;
+        return dataItem.position;
+      })
+
+      // need to set this, otherwise fillOpacity is not changed and not set
+      dateAxis.events.on("validated", function () {
+        am4core.iter.each(dateAxis.renderer.labels.iterator(), function (label) {
+          label.fillOpacity = label.fillOpacity;
+        })
+      })
+
+      // this makes date axis labels which are at equal minutes to be rotated
+      dateAxis.renderer.labels.template.adapter.add("rotation", function (rotation, target) {
+        var dataItem = target.dataItem;
+        if (dataItem.date && dataItem.date.getTime() == am4core.time.round(new Date(dataItem.date.getTime()),
+            "minute").getTime()) {
+          target.verticalCenter = "middle";
+          target.horizontalCenter = "left";
+          return -90;
+        } else {
+          target.verticalCenter = "bottom";
+          target.horizontalCenter = "middle";
+          return 0;
+        }
+      })
+
+      // bullet at the front of the line
+      var bullet = series.createChild(am4charts.CircleBullet);
+      bullet.circle.radius = 5;
+      bullet.fillOpacity = 1;
+      bullet.fill = chart.colors.getIndex(0);
+      bullet.isMeasured = false;
+
+      series.events.on("validated", function () {
+        bullet.moveTo(series.dataItems.last.point);
+        bullet.validatePosition();
+      });
+
+    }); // end am4core.ready()
+  </script>
+
+
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_5", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0;
+
+      chart.padding(0, 0, 0, 0);
+
+      chart.zoomOutButton.disabled = true;
+
+      var data = [];
+      var visits = 10;
+      var i = 0;
+
+      for (i = 0; i <= 30; i++) {
+        visits -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+        data.push({
+          date: new Date().setSeconds(i - 30),
+          value: visits
+        });
+      }
+
+      chart.data = data;
+
+      var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+      dateAxis.renderer.grid.template.location = 0;
+      dateAxis.renderer.minGridDistance = 30;
+      dateAxis.dateFormats.setKey("second", "ss");
+      dateAxis.periodChangeDateFormats.setKey("second", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("minute", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("hour", "[bold]h:mm a");
+      dateAxis.renderer.inside = true;
+      dateAxis.renderer.axisFills.template.disabled = true;
+      dateAxis.renderer.ticks.template.disabled = true;
+      dateAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      dateAxis.renderer.labels.template.fontSize = 10;
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.interpolationDuration = 500;
+      valueAxis.rangeChangeDuration = 500;
+      valueAxis.renderer.inside = true;
+      valueAxis.renderer.minLabelPosition = 0.05;
+      valueAxis.renderer.maxLabelPosition = 0.95;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+      valueAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      valueAxis.renderer.labels.template.fontSize = 10;
+
+      var series = chart.series.push(new am4charts.LineSeries());
+      series.dataFields.dateX = "date";
+      series.dataFields.valueY = "value";
+      series.interpolationDuration = 500;
+      series.defaultState.transitionDuration = 0;
+      series.tensionX = 0.8;
+
+      chart.events.on("datavalidated", function () {
+        dateAxis.zoom({
+          start: 1 / 15,
+          end: 1.2
+        }, false, true);
+      });
+
+      dateAxis.interpolationDuration = 500;
+      dateAxis.rangeChangeDuration = 500;
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          if (interval) {
+            clearInterval(interval);
+          }
+        } else {
+          startInterval();
+        }
+      }, false);
+
+      // add data
+      var interval;
+
+      function startInterval() {
+        interval = setInterval(function () {
+          visits =
+            visits + Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          var lastdataItem = series.dataItems.getIndex(series.dataItems.length - 1);
+          chart.addData({
+              date: new Date(lastdataItem.dateX.getTime() + 1000),
+              value: visits
+            },
+            1
+          );
+        }, 1000);
+      }
+
+      startInterval();
+
+      // all the below is optional, makes some fancy effects
+      // gradient fill of the series
+      series.fillOpacity = 1;
+      var gradient = new am4core.LinearGradient();
+      gradient.addColor(chart.colors.getIndex(0), 0.2);
+      gradient.addColor(chart.colors.getIndex(0), 0);
+      series.fill = gradient;
+
+      // this makes date axis labels to fade out
+      dateAxis.renderer.labels.template.adapter.add("fillOpacity", function (fillOpacity, target) {
+        var dataItem = target.dataItem;
+        return dataItem.position;
+      })
+
+      // need to set this, otherwise fillOpacity is not changed and not set
+      dateAxis.events.on("validated", function () {
+        am4core.iter.each(dateAxis.renderer.labels.iterator(), function (label) {
+          label.fillOpacity = label.fillOpacity;
+        })
+      })
+
+      // this makes date axis labels which are at equal minutes to be rotated
+      dateAxis.renderer.labels.template.adapter.add("rotation", function (rotation, target) {
+        var dataItem = target.dataItem;
+        if (dataItem.date && dataItem.date.getTime() == am4core.time.round(new Date(dataItem.date.getTime()),
+            "minute").getTime()) {
+          target.verticalCenter = "middle";
+          target.horizontalCenter = "left";
+          return -90;
+        } else {
+          target.verticalCenter = "bottom";
+          target.horizontalCenter = "middle";
+          return 0;
+        }
+      })
+
+      // bullet at the front of the line
+      var bullet = series.createChild(am4charts.CircleBullet);
+      bullet.circle.radius = 5;
+      bullet.fillOpacity = 1;
+      bullet.fill = chart.colors.getIndex(0);
+      bullet.isMeasured = false;
+
+      series.events.on("validated", function () {
+        bullet.moveTo(series.dataItems.last.point);
+        bullet.validatePosition();
+      });
+
+    }); // end am4core.ready()
+  </script>
+
+
+
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_6", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0;
+
+      chart.padding(0, 0, 0, 0);
+
+      chart.zoomOutButton.disabled = true;
+
+      var data = [];
+      var visits = 10;
+      var i = 0;
+
+      for (i = 0; i <= 30; i++) {
+        visits -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+        data.push({
+          date: new Date().setSeconds(i - 30),
+          value: visits
+        });
+      }
+
+      chart.data = data;
+
+      var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+      dateAxis.renderer.grid.template.location = 0;
+      dateAxis.renderer.minGridDistance = 30;
+      dateAxis.dateFormats.setKey("second", "ss");
+      dateAxis.periodChangeDateFormats.setKey("second", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("minute", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("hour", "[bold]h:mm a");
+      dateAxis.renderer.inside = true;
+      dateAxis.renderer.axisFills.template.disabled = true;
+      dateAxis.renderer.ticks.template.disabled = true;
+      dateAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      dateAxis.renderer.labels.template.fontSize = 10;
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.interpolationDuration = 500;
+      valueAxis.rangeChangeDuration = 500;
+      valueAxis.renderer.inside = true;
+      valueAxis.renderer.minLabelPosition = 0.05;
+      valueAxis.renderer.maxLabelPosition = 0.95;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+      valueAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      valueAxis.renderer.labels.template.fontSize = 10;
+
+      var series = chart.series.push(new am4charts.LineSeries());
+      series.dataFields.dateX = "date";
+      series.dataFields.valueY = "value";
+      series.interpolationDuration = 500;
+      series.defaultState.transitionDuration = 0;
+      series.tensionX = 0.8;
+
+      chart.events.on("datavalidated", function () {
+        dateAxis.zoom({
+          start: 1 / 15,
+          end: 1.2
+        }, false, true);
+      });
+
+      dateAxis.interpolationDuration = 500;
+      dateAxis.rangeChangeDuration = 500;
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          if (interval) {
+            clearInterval(interval);
+          }
+        } else {
+          startInterval();
+        }
+      }, false);
+
+      // add data
+      var interval;
+
+      function startInterval() {
+        interval = setInterval(function () {
+          visits =
+            visits + Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          var lastdataItem = series.dataItems.getIndex(series.dataItems.length - 1);
+          chart.addData({
+              date: new Date(lastdataItem.dateX.getTime() + 1000),
+              value: visits
+            },
+            1
+          );
+        }, 1000);
+      }
+
+      startInterval();
+
+      // all the below is optional, makes some fancy effects
+      // gradient fill of the series
+      series.fillOpacity = 1;
+      var gradient = new am4core.LinearGradient();
+      gradient.addColor(chart.colors.getIndex(0), 0.2);
+      gradient.addColor(chart.colors.getIndex(0), 0);
+      series.fill = gradient;
+
+      // this makes date axis labels to fade out
+      dateAxis.renderer.labels.template.adapter.add("fillOpacity", function (fillOpacity, target) {
+        var dataItem = target.dataItem;
+        return dataItem.position;
+      })
+
+      // need to set this, otherwise fillOpacity is not changed and not set
+      dateAxis.events.on("validated", function () {
+        am4core.iter.each(dateAxis.renderer.labels.iterator(), function (label) {
+          label.fillOpacity = label.fillOpacity;
+        })
+      })
+
+      // this makes date axis labels which are at equal minutes to be rotated
+      dateAxis.renderer.labels.template.adapter.add("rotation", function (rotation, target) {
+        var dataItem = target.dataItem;
+        if (dataItem.date && dataItem.date.getTime() == am4core.time.round(new Date(dataItem.date.getTime()),
+            "minute").getTime()) {
+          target.verticalCenter = "middle";
+          target.horizontalCenter = "left";
+          return -90;
+        } else {
+          target.verticalCenter = "bottom";
+          target.horizontalCenter = "middle";
+          return 0;
+        }
+      })
+
+      // bullet at the front of the line
+      var bullet = series.createChild(am4charts.CircleBullet);
+      bullet.circle.radius = 5;
+      bullet.fillOpacity = 1;
+      bullet.fill = chart.colors.getIndex(0);
+      bullet.isMeasured = false;
+
+      series.events.on("validated", function () {
+        bullet.moveTo(series.dataItems.last.point);
+        bullet.validatePosition();
+      });
+
+    }); // end am4core.ready()
+  </script>
+
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_7", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0;
+
+      chart.padding(0, 0, 0, 0);
+
+      chart.zoomOutButton.disabled = true;
+
+      var data = [];
+      var visits = 10;
+      var i = 0;
+
+      for (i = 0; i <= 30; i++) {
+        visits -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+        data.push({
+          date: new Date().setSeconds(i - 30),
+          value: visits
+        });
+      }
+
+      chart.data = data;
+
+      var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+      dateAxis.renderer.grid.template.location = 0;
+      dateAxis.renderer.minGridDistance = 30;
+      dateAxis.dateFormats.setKey("second", "ss");
+      dateAxis.periodChangeDateFormats.setKey("second", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("minute", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("hour", "[bold]h:mm a");
+      dateAxis.renderer.inside = true;
+      dateAxis.renderer.axisFills.template.disabled = true;
+      dateAxis.renderer.ticks.template.disabled = true;
+      dateAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      dateAxis.renderer.labels.template.fontSize = 10;
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.interpolationDuration = 500;
+      valueAxis.rangeChangeDuration = 500;
+      valueAxis.renderer.inside = true;
+      valueAxis.renderer.minLabelPosition = 0.05;
+      valueAxis.renderer.maxLabelPosition = 0.95;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+      valueAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      valueAxis.renderer.labels.template.fontSize = 10;
+
+      var series = chart.series.push(new am4charts.LineSeries());
+      series.dataFields.dateX = "date";
+      series.dataFields.valueY = "value";
+      series.interpolationDuration = 500;
+      series.defaultState.transitionDuration = 0;
+      series.tensionX = 0.8;
+
+      chart.events.on("datavalidated", function () {
+        dateAxis.zoom({
+          start: 1 / 15,
+          end: 1.2
+        }, false, true);
+      });
+
+      dateAxis.interpolationDuration = 500;
+      dateAxis.rangeChangeDuration = 500;
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          if (interval) {
+            clearInterval(interval);
+          }
+        } else {
+          startInterval();
+        }
+      }, false);
+
+      // add data
+      var interval;
+
+      function startInterval() {
+        interval = setInterval(function () {
+          visits =
+            visits + Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          var lastdataItem = series.dataItems.getIndex(series.dataItems.length - 1);
+          chart.addData({
+              date: new Date(lastdataItem.dateX.getTime() + 1000),
+              value: visits
+            },
+            1
+          );
+        }, 1000);
+      }
+
+      startInterval();
+
+      // all the below is optional, makes some fancy effects
+      // gradient fill of the series
+      series.fillOpacity = 1;
+      var gradient = new am4core.LinearGradient();
+      gradient.addColor(chart.colors.getIndex(0), 0.2);
+      gradient.addColor(chart.colors.getIndex(0), 0);
+      series.fill = gradient;
+
+      // this makes date axis labels to fade out
+      dateAxis.renderer.labels.template.adapter.add("fillOpacity", function (fillOpacity, target) {
+        var dataItem = target.dataItem;
+        return dataItem.position;
+      })
+
+      // need to set this, otherwise fillOpacity is not changed and not set
+      dateAxis.events.on("validated", function () {
+        am4core.iter.each(dateAxis.renderer.labels.iterator(), function (label) {
+          label.fillOpacity = label.fillOpacity;
+        })
+      })
+
+      // this makes date axis labels which are at equal minutes to be rotated
+      dateAxis.renderer.labels.template.adapter.add("rotation", function (rotation, target) {
+        var dataItem = target.dataItem;
+        if (dataItem.date && dataItem.date.getTime() == am4core.time.round(new Date(dataItem.date.getTime()),
+            "minute").getTime()) {
+          target.verticalCenter = "middle";
+          target.horizontalCenter = "left";
+          return -90;
+        } else {
+          target.verticalCenter = "bottom";
+          target.horizontalCenter = "middle";
+          return 0;
+        }
+      })
+
+      // bullet at the front of the line
+      var bullet = series.createChild(am4charts.CircleBullet);
+      bullet.circle.radius = 5;
+      bullet.fillOpacity = 1;
+      bullet.fill = chart.colors.getIndex(0);
+      bullet.isMeasured = false;
+
+      series.events.on("validated", function () {
+        bullet.moveTo(series.dataItems.last.point);
+        bullet.validatePosition();
+      });
+
+    }); // end am4core.ready()
+  </script>
+
+
+  <script>
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      var chart = am4core.create("chart_8", am4charts.XYChart);
+      chart.hiddenState.properties.opacity = 0;
+
+      chart.padding(0, 0, 0, 0);
+
+      chart.zoomOutButton.disabled = true;
+
+      var data = [];
+      var visits = 10;
+      var i = 0;
+
+      for (i = 0; i <= 30; i++) {
+        visits -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+        data.push({
+          date: new Date().setSeconds(i - 30),
+          value: visits
+        });
+      }
+
+      chart.data = data;
+
+      var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+      dateAxis.renderer.grid.template.location = 0;
+      dateAxis.renderer.minGridDistance = 30;
+      dateAxis.dateFormats.setKey("second", "ss");
+      dateAxis.periodChangeDateFormats.setKey("second", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("minute", "[bold]h:mm a");
+      dateAxis.periodChangeDateFormats.setKey("hour", "[bold]h:mm a");
+      dateAxis.renderer.inside = true;
+      dateAxis.renderer.axisFills.template.disabled = true;
+      dateAxis.renderer.ticks.template.disabled = true;
+      dateAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      dateAxis.renderer.labels.template.fontSize = 10;
+
+      var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+      valueAxis.tooltip.disabled = true;
+      valueAxis.interpolationDuration = 500;
+      valueAxis.rangeChangeDuration = 500;
+      valueAxis.renderer.inside = true;
+      valueAxis.renderer.minLabelPosition = 0.05;
+      valueAxis.renderer.maxLabelPosition = 0.95;
+      valueAxis.renderer.axisFills.template.disabled = true;
+      valueAxis.renderer.ticks.template.disabled = true;
+      valueAxis.renderer.labels.template.fill = am4core.color("#f0ad4e");
+      valueAxis.renderer.labels.template.fontSize = 10;
+
+      var series = chart.series.push(new am4charts.LineSeries());
+      series.dataFields.dateX = "date";
+      series.dataFields.valueY = "value";
+      series.interpolationDuration = 500;
+      series.defaultState.transitionDuration = 0;
+      series.tensionX = 0.8;
+
+      chart.events.on("datavalidated", function () {
+        dateAxis.zoom({
+          start: 1 / 15,
+          end: 1.2
+        }, false, true);
+      });
+
+      dateAxis.interpolationDuration = 500;
+      dateAxis.rangeChangeDuration = 500;
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden) {
+          if (interval) {
+            clearInterval(interval);
+          }
+        } else {
+          startInterval();
+        }
+      }, false);
+
+      // add data
+      var interval;
+
+      function startInterval() {
+        interval = setInterval(function () {
+          visits =
+            visits + Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 5);
+          var lastdataItem = series.dataItems.getIndex(series.dataItems.length - 1);
+          chart.addData({
+              date: new Date(lastdataItem.dateX.getTime() + 1000),
+              value: visits
+            },
+            1
+          );
+        }, 1000);
+      }
+
+      startInterval();
+
+      // all the below is optional, makes some fancy effects
+      // gradient fill of the series
+      series.fillOpacity = 1;
+      var gradient = new am4core.LinearGradient();
+      gradient.addColor(chart.colors.getIndex(0), 0.2);
+      gradient.addColor(chart.colors.getIndex(0), 0);
+      series.fill = gradient;
+
+      // this makes date axis labels to fade out
+      dateAxis.renderer.labels.template.adapter.add("fillOpacity", function (fillOpacity, target) {
+        var dataItem = target.dataItem;
+        return dataItem.position;
+      })
+
+      // need to set this, otherwise fillOpacity is not changed and not set
+      dateAxis.events.on("validated", function () {
+        am4core.iter.each(dateAxis.renderer.labels.iterator(), function (label) {
+          label.fillOpacity = label.fillOpacity;
+        })
+      })
+
+      // this makes date axis labels which are at equal minutes to be rotated
+      dateAxis.renderer.labels.template.adapter.add("rotation", function (rotation, target) {
+        var dataItem = target.dataItem;
+        if (dataItem.date && dataItem.date.getTime() == am4core.time.round(new Date(dataItem.date.getTime()),
+            "minute").getTime()) {
+          target.verticalCenter = "middle";
+          target.horizontalCenter = "left";
+          return -90;
+        } else {
+          target.verticalCenter = "bottom";
+          target.horizontalCenter = "middle";
+          return 0;
+        }
+      })
+
+      // bullet at the front of the line
+      var bullet = series.createChild(am4charts.CircleBullet);
+      bullet.circle.radius = 5;
+      bullet.fillOpacity = 1;
+      bullet.fill = chart.colors.getIndex(0);
+      bullet.isMeasured = false;
+
+      series.events.on("validated", function () {
+        bullet.moveTo(series.dataItems.last.point);
+        bullet.validatePosition();
+      });
+
+    }); // end am4core.ready()
+  </script>
+
 </body>
+
 </html>
