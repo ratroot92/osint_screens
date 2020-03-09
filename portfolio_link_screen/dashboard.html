@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
   <title>Hello, world!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
@@ -45,13 +46,13 @@
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">DASHBOARD</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" >DASHBOARD</a>
                       </li>
                     </div>
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">MONITOR</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" >MONITOR</a>
                       </li>
                     </div>
                   </div>
@@ -64,13 +65,13 @@
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">FETCH</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" >FETCH</a>
                       </li>
                     </div>
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">RETRIEVE</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" >RETRIEVE</a>
                       </li>
                     </div>
                   </div>
@@ -90,18 +91,18 @@
      
     </div>
     <div class="row">
-     <div class="col-md-2"></div>
+     <div class="col-lg-2"></div>
 
-      <div class="col-md-8 ">
+      <div class="col-lg-8 ">
         <div class="row border second_nav_row">
-          <div class="col-md-3 m-0 p-0  "><a class="btn border-right  nav-link  second_nav_btn w-100 h-100 text-white">Create</a></div>
-          <div class="col-md-3 border-top m-0 p-0  "><a class="btn  border-right border-top nav-link  second_nav_btn w-100 h-100 text-white">Overview</a></div>
-          <div class="col-md-3  border-top m-0 p-0  "><a class="btn  border-right border-top nav-link  second_nav_btn w-100 h-100 text-white">Link </a></div>
-          <div class="col-md-3 m-0 p-0  "><a class="btn   nav-link  second_nav_btn w-100 h-100 text-white active">Archive</a></div>
+          <div class="col-lg-3 m-0 p-0  "><a class="btn border-right  nav-link  second_nav_btn w-100 h-100 text-white">Create</a></div>
+          <div class="col-lg-3 border-top m-0 p-0  "><a class="btn  border-right border-top nav-link  second_nav_btn w-100 h-100 text-white">Overview</a></div>
+          <div class="col-lg-3  border-top m-0 p-0  "><a class="btn  border-right border-top nav-link  second_nav_btn w-100 h-100 text-white">Link </a></div>
+          <div class="col-lg-3 m-0 p-0  "><a class="btn   nav-link  second_nav_btn w-100 h-100 text-white active">Archive</a></div>
         </div>
       </div>
 
-      <div class="col-md-2"></div>
+      <div class="col-lg-2"></div>
       
     </div>
 
@@ -221,14 +222,14 @@
       <!-- put pages content here  -->
       <div class="col-lg-8 ">
         <div class="row" >
-          <div class="col-md-12  ">
+          <div class="col-lg-12  ">
             <div class="w-100 h-100 " id="content_div">
               <div class="card-header  main_card_header m-0 p-0 ">
-                <p class="card_header_text"> Portfolio Link</p>
+                <p class="card_header_text"> Portfolio Overview</p>
               </div>
               <div class="card-body   p-4  m-0 ">
               <div class="row card_row">
-                <div class="col-md-1  m-0 p-0  ">
+                <div class="col-lg-1  m-0 p-0  ">
                 <div class="  w-100 h-50 m-0 p-0 eye_icon d-flex flex-column justify-content-start  text-center  ">
                   <i class="fas fa-unlink icon_chain text-white  pb-3 pt-3 border border-left-0 "></i>
                 </div>
@@ -238,11 +239,22 @@
                 </div>
                   
                  </div>
-                 <div class="col-md-10 m-0 p-0 ">
-                  <div class="m-0 p-0 " id="case_link" ></div>
+                 <div class="col-lg-10 m-0 p-0  ">
+             <div class="row h-100 w-100">
+               <div class="col-lg-6  m-0 p-0 custom_center">
+                 <div class="m-0 p-0 " id="chart_1">
+                 
                  </div>
-                 <div class="col-md-1 card_text    m-0 p-0 ">
-                 <p class="text-white">  Case Link Relation</p>
+               </div>
+               <div class="col-lg-6 m-0 p-0 ">
+                <div class="form_1">
+                  
+                </div>
+               </div>
+             </div>
+                 </div>
+                 <div class="col-lg-1 card_text    m-0 p-0 ">
+                 <p class="text-white">  View Portfolio Details</p>
                  </div>
               </div>
               
@@ -307,7 +319,7 @@
         <div class="row ">
           <div class="col-lg-12 w-100">
 
-            <div class="d-flex flex-column  w-100 justify-content-center align-items-center input_wrapper " style="">
+            <div class="d-flex flex-column  w-100 justify-content-center align-items-center input_wrapper " >
               <input class="form-control input_rightside" placeholder="enter name here" style=" ">
             </div>
 
@@ -368,7 +380,7 @@
           <div class="col-lg-12 ">
 
             <div class="d-flex flex-row    w-100 justify-content-center align-items-center custom_progress_wrapper "
-              style="">
+              >
 
               <div class="progress ">
                 <div class="progress-bar progress-bar-secondary custom_progress" role="progressbar" aria-valuenow="60"
@@ -401,11 +413,11 @@
 
         <!-- start of row 5 -->
         <div class="row mt-2">
-          <div class="col-lg-12  m-0 p-0 alert_2" style="">
-            <div class=" alert_2_wrapper h-100  ml-auto mr-auto" style="">
-              <div class="text-danger font-weight-bold alert_2_text_header  " style="">
+          <div class="col-lg-12  m-0 p-0 alert_2" >
+            <div class=" alert_2_wrapper h-100  ml-auto mr-auto" >
+              <div class="text-danger font-weight-bold alert_2_text_header  " >
                 Alert:
-                <div class="text-white  alert_2_text_wrapper" style="">
+                <div class="text-white  alert_2_text_wrapper" >
                   asdsadsadsadaasdasdasddsad
                   asdsadsadsadaasdasdasddsadasdsad
                 </div>
@@ -436,7 +448,7 @@
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
   <script src="js/slim.min.js"></script>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/ulg/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
   <script src="js/popper.min.js"></script>
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -445,7 +457,11 @@
   <script src="js/bootstrap.min.js"></script>
 
 
-  <!-- Resources -->
+
+
+
+
+  <!-- donut  graphs  -->
   <script src="https://www.amcharts.com/lib/4/core.js"></script>
   <script src="https://www.amcharts.com/lib/4/charts.js"></script>
   <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
@@ -453,18 +469,10 @@
 
 
 
-  <!-- forec directed graphs  -->
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/4/core.js"></script>
-<script src="https://www.amcharts.com/lib/4/charts.js"></script>
-<script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
-<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-
   <!--  -->
   <script src="js/chart.js"></script>
-  <script src="js/addditional_chart.js"></script>
+  <script src="js/additional_chart.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
 
 </body>
 
