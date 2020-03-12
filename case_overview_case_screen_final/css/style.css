@@ -1,8 +1,4 @@
-.card_background{
-    background: linear-gradient(#154874, #000);
-    border-radius:15px 15px 0px 0px;
-    height: ;
-}
+
 .form_background_1{
     
 
@@ -57,19 +53,283 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
 }
 
 
-@media screen and (max-width: 1366px) {
-  
 
+
+
+/* case overview css */
+
+.left_border{
+    background: linear-gradient(#154874, #000);
+}
+
+.chain_icon_wrapper{
+    height:10%;
+    border-radius:15px 0px 0px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+
+.chain_icon{
+    font-size:20px;
+}
+
+.share_icon_wrapper{
+    height:10%;
+    border-radius:0px 0px 0px 15px ;
+    background: linear-gradient(#154874, #000);
+    border: 1px solid #154874;
+    border: 1px solid white;
+}
+.share_icon{
+    font-size:20px;
+}
+
+.left_border_text_wrapper{
+    overflow:hidden;
+    height:80%;
+    border-radius :2px 15px 15px 2px;
+    background-color: aliceblue;
+}
+
+.left_border_text{
+    font-size:10px;
+    color:blue;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-right: 5px;; */
+}
+.right_border_text_wrapper{
+    border-radius:15px 2px 2px 15px ;
+    background-color: aliceblue;;
+    height: 80%;;
+}
+
+.right_border_text{
+    overflow:hidden;
+    height:80%;
+    border-radius :15px 2px 2px 15px;
+    color:blue;
+}
+
+.right_border{
+  
+    background: linear-gradient(#154874, #000);
+}
+
+.top_right_icon_wrapper{
+    height:10%;
+    border-radius:0px 15px 15px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+
+.top_right_icon{
+    font-size:25px;
+}
+
+.camera_icon_wrapper{
+
+    height:10%;
+    ;border-radius:0px 0px 15px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+.camera_icon{
+    font-size:25px;
 }
 
 
-/* case overiew */
+
+
+
+
+
+
+
+
+
+.case_overview_div_1{
+    font-size:12px;
+    height:100px;
+    overflow: hidden;;
+  
+}
+
+
+.case_overview_div_2{
+    font-size:12px;
+    height:100px;
+    overflow: hidden;;
+}
+.overview_profile_image{
+    height:100%;
+    width:100%;
+}
+
+
 
 
 .custom_div_2{
     background: linear-gradient(#154874, #000);
     border-radius:20px 20px 0px 0px!important;
     letter-spacing: 2px;;
+    font-size: 14px;;
+  color:white;
+  padding:5px;
+}
 
+#caseCreate_btn{
+     background: linear-gradient(#154874, #000);
+    border-radius:15px 15px 0px 0px;
+    border:1px solid white;
+}
+#caseOverview_btn{
+     background: linear-gradient(#154874, #000);
+    border-radius:15px 15px 0px 0px;
+    border:1px solid white; 
+}
+
+#caseCreate_div{
   
 }
+
+
+@media screen and (max-width: 1366px) {
+  
+
+/* case overview css */
+
+.left_border{
+    background: linear-gradient(#154874, #000);
+  border-radius:15px 0px 0px 15px ;
+}
+
+.chain_icon_wrapper{
+    height:10%;
+    border-radius:15px 0px 0px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+
+.chain_icon{
+    font-size:20px;
+}
+
+.share_icon_wrapper{
+    height:10%;
+    border-radius:0px 0px 0px 15px ;
+    background: linear-gradient(#154874, #000);
+    border: 1px solid #154874;
+    border: 1px solid white;
+}
+.share_icon{
+    font-size:20px;
+}
+
+.left_border_text_wrapper{
+    overflow:hidden;
+    height:80%;
+    border-radius :2px 15px 15px 2px;
+    background-color: aliceblue;
+}
+
+.left_border_text{
+    font-size:10px;
+   
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-right: 5px;; */
+}
+.right_border_text_wrapper{
+    border-radius:15px 2px 2px 15px ;
+    background-color: aliceblue;;
+    
+}
+
+.right_border_text{
+    overflow:hidden;
+    height:80%;
+    border-radius :15px 2px 2px 15px;
+   
+}
+
+.right_border{
+border-radius:0px 16px 16px 0px;
+    background: linear-gradient(#154874, #000);
+}
+
+.top_right_icon_wrapper{
+    height:10%;
+    border-radius:0px 15px 0px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+
+.top_right_icon{
+    font-size:20px;
+}
+
+.camera_icon_wrapper{
+
+    height:10%;
+    ;border-radius:0px 0px 15px 0px ;
+     background: linear-gradient(#154874, #000);
+     border: 1px solid #154874;
+     border: 1px solid white;
+}
+.camera_icon{
+    font-size:20px;
+}
+
+
+
+
+
+.case_overview_div_1{
+    font-size:12px;
+    height:80px;
+    overflow: hidden;
+   
+}
+
+
+.case_overview_div_2{
+    font-size:12px;
+    height:80px;
+    overflow: hidden;;
+}
+.overview_profile_image{
+    height:100%;
+    width:100%;
+   
+}
+
+
+
+.custom_div_2{
+    background: linear-gradient(#154874, #000);
+    border-radius:20px 20px 0px 0px!important;
+    letter-spacing: 2px;;
+    font-size: 14px;;
+    height: 3color:white;
+    padding:5px;0px;;
+  
+}
+
+.nav_text{
+    font-size:18px;
+}
+
+}
+
+
+
+
+

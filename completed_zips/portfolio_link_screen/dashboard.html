@@ -12,8 +12,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/layouts.css" />
   <title>Hello, world!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
     integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
@@ -45,13 +45,13 @@
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" >DASHBOARD</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">DASHBOARD</a>
                       </li>
                     </div>
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" >MONITOR</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">MONITOR</a>
                       </li>
                     </div>
                   </div>
@@ -64,13 +64,13 @@
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" >FETCH</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">FETCH</a>
                       </li>
                     </div>
                     <div class="col-lg-6  list list-inline custom_center "
                       style="border-right:2px solid white;border-left:2px solid white;padding-top:35px;padding-bottom:20px;">
                       <li class="nav-item">
-                        <a class="   btn  font-weight-bold nav_btn" href="#" >RETRIEVE</a>
+                        <a class="   btn  font-weight-bold nav_btn" href="#" style="">RETRIEVE</a>
                       </li>
                     </div>
                   </div>
@@ -108,14 +108,14 @@
     <div class="row mt-5">
       <div class="col-lg-2 col-sm-12 col-xs-12 ">
 
-        <div class="row ">
-          <div class="col-lg-12 date_time_wrapper ">
+        <div class="row">
+          <div class="col-lg-12 ">
 
             <!-- start of bars -->
-            <div class="text-white left_nav_time" >TIME: 12:02 GMT</div>
-            <div class="text-white left_nav_date" >DATE: 12/12/2020</div>
-            <div class="left_nav text-white   ">
-             
+  <!-- start of bars -->
+  <div class="text-white left_nav_time" >TIME: 12:02 GMT</div>
+  <div class="text-white left_nav_date" >DATE: 12/12/2020</div>
+            <div class="left_nav text-white  ">
 
               <p class="left_nav_text w-100 h-100 d-block">This is sample dynamic text This is sample dynamic text This
                 is sample dynamic text This is sample dynamic text
@@ -222,92 +222,41 @@
 
       <!-- put pages content here  -->
       <div class="col-lg-8 ">
-          <div class="row">
-            <div class="col-md-12 border card_header  ">
-              <p class="card_header_text p-2">CREATE PORTFOLIO  </p>         
-            </div>
-          </div>
-
-          <div class="row form_wrapper pl-5 pr-5  ">
-            <div class="col-md-12  ">
-              <div class="row mt-4 ">
-          
-                <div class="col-md-12 pl-5 pr-5 pt-3 pb-2 bg-white  btn-group btn-group-toggle d-flex flex-row justify-content-center align-items-center btn_wrappers" data-toggle="buttons">
-                  <div class="row col-md-4"><label class="btn  active custom_center radio_btns "
-                   >
-                    <input type="radio" class="options" name="options" id="option1" checked> INDIVIDUAL
-                  </label></div>
-                  <div class="row col-md-4">
-                  <label class="btn  radio_btns custom_center">
-                    <input type="radio" class="options" name="options" id="option2"> GROUP
-                  </label>
-                  </div>
-                  <div class="row">
-                  <label class="btn  radio_btns custom_center">
-                    <input type="radio" class="options" name="options" id="option3"> EVENT
-                  </label>
+        <div class="row" >
+          <div class="col-md-12  ">
+            <div class="w-100 h-100 " id="content_div">
+              <div class="card-header  main_card_header m-0 p-0 ">
+                <p class="card_header_text"> Portfolio Link</p>
+              </div>
+              <div class="card-body   p-4  m-0 ">
+              <div class="row card_row">
+                <div class="col-md-1  m-0 p-0  ">
+                <div class="  w-100 h-50 m-0 p-0 eye_icon d-flex flex-column justify-content-start  text-center  ">
+                  <i class="fas fa-unlink icon_chain text-white  pb-3 pt-3 border border-left-0 "></i>
                 </div>
+               
+                <div class=" w-100 h-50 m-0 p-0 eye_icon d-flex flex-column justify-content-end  text-center ">
+                  <i class="fas fa-eye icon_eye text-white pb-3 pt-3 border border-left-0 "></i>
                 </div>
+                  
+                 </div>
+                 <div class="col-md-10 m-0 p-0 ">
+                  <div class="m-0 p-0 " id="case_link" ></div>
+                 </div>
+                 <div class="col-md-1 card_text    m-0 p-0 ">
+                 <p class="text-white">  Case Link Relation</p>
+                 </div>
+              </div>
+              
              
-  
-              
-  
-              
-            </div>
 
-           
- 
-            <div class="row bg-white pl-5 pr-5 ">
-              <div class="col-md-12  form-group form-inline w-100 h-100 b">
-                <label class="bg-white custom_label m-0 p-0  h-100 w-100  pl-2 "><span class="input_text">Author ID</span>
-                  <select  class=" ml-2 form-control  form_input w-100" id="" name="" required  ></select>
-                </label>
-              </div>
-            </div>
-  
-   
-            <div class="row bg-white pl-5 pr-5 ">
-              <div class="col-md-12  form-group form-inline w-100 h-100 b">
-                <label class="bg-white custom_label m-0 p-0  h-100 w-100  pl-2 "><span class="input_text">Author ID</span>
-                  <input type="text" class=" ml-2 form-control  form_input w-100" id="" name="" required />
-                </label>
-              </div>
-            </div>
-  
-  
-  
-   
-            <div class="row bg-white pl-5 pr-5 ">
-              <div class="col-md-12  form-group form-inline w-100 h-100 b">
-                <label class="bg-white custom_label m-0 p-0  h-100 w-100  pl-2 "><span class="input_text">Author Name</span>
-                  <input type="text" class=" ml-2 form-control  form_input w-100" id="" name="" required />
-                </label>
-              </div>
-            </div>
-   
-            <div class="row bg-white pl-5 pr-5 ">
-              <div class="col-md-12  form-group form-inline w-100 h-100 b">
-                <label class="bg-white custom_label m-0 p-0  h-100 w-100  pl-2 "><span class="input_text">Author URL</span>
-                  <input type="url" class=" ml-2 form-control  form_input w-100" id="" name="" required />
-                </label>
-              </div>
-            </div>
-   
-            <div class="row bg-white pl-5 pr-5  ">
-              <div class="col-md-12  form-group form-inline w-100 h-100 b">
-                <label class="bg-white custom_label m-0 p-0  h-100 w-100  pl-2 "><span class="input_text">User Name</span>
-                  <input type="url" class=" ml-2 form-control  form_input w-100" id="" name="" required />
-                </label>
-              </div>
-            </div>
-
-            <div class="row bg-white input_wrapper mb-4"></div>
-
-
-
-
-            </div>
           </div>
+
+        </div>
+
+      </div>
+
+   </div>
 
         <!-- start of footer  -->
         <div class="row footer_wrapper " >
@@ -360,7 +309,7 @@
         <div class="row ">
           <div class="col-lg-12 w-100">
 
-            <div class="d-flex flex-column  w-100 justify-content-center align-items-center input_wrapper " >
+            <div class="d-flex flex-column  w-100 justify-content-center align-items-center input_wrapper " style="">
               <input class="form-control input_rightside" placeholder="enter name here" style=" ">
             </div>
 
@@ -421,7 +370,7 @@
           <div class="col-lg-12 ">
 
             <div class="d-flex flex-row    w-100 justify-content-center align-items-center custom_progress_wrapper "
-              >
+              style="">
 
               <div class="progress ">
                 <div class="progress-bar progress-bar-secondary custom_progress" role="progressbar" aria-valuenow="60"
@@ -454,11 +403,11 @@
 
         <!-- start of row 5 -->
         <div class="row mt-2">
-          <div class="col-lg-12  m-0 p-0 alert_2" >
-            <div class=" alert_2_wrapper h-100  ml-auto mr-auto" >
-              <div class="text-danger font-weight-bold alert_2_text_header  " >
+          <div class="col-lg-12  m-0 p-0 alert_2" style="">
+            <div class=" alert_2_wrapper h-100  ml-auto mr-auto" style="">
+              <div class="text-danger font-weight-bold alert_2_text_header  " style="">
                 Alert:
-                <div class="text-white  alert_2_text_wrapper" >
+                <div class="text-white  alert_2_text_wrapper" style="">
                   asdsadsadsadaasdasdasddsad
                   asdsadsadsadaasdasdasddsadasdsad
                 </div>
@@ -505,9 +454,20 @@
   <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
 
+
+  <!-- forec directed graphs  -->
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+  <!--  -->
   <script src="js/chart.js"></script>
+  <script src="js/addditional_chart.js"></script>
 
 </body>
 
 </html>
-

@@ -780,7 +780,7 @@ select{
         padding-bottom: 27%;
         padding-left: 17%;
         padding-right: 31%;
-        padding-top: 29%;
+        padding-top: 25%;
       
       
 
@@ -789,8 +789,12 @@ select{
 
 
     .left_nav_text {
+
+
         font-size: 10px;
-        overflow: hidden
+        overflow: hidden;
+
+
 
     }
 
@@ -1060,13 +1064,13 @@ select{
     position:absolute;
     top:1px;
     left:18px;
-    font-size:7px;
+    font-size:10px;
 }
 .left_nav_date{
     position:absolute;
-    top:10px;
+    top:17px;
     left:18px;
-    font-size:7px;
+    font-size:10px;
 }
 .date_time_wrapper{
     position:relative;

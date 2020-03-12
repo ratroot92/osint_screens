@@ -142,18 +142,13 @@ body {
 
 
 input {
-    background-color: white !important;
-    border-radius: 10px 5px 5px 10px!important;
-    color:black!important;
-}
-select{
-    background-color: white !important;
-    border-radius: 10px 5px 5px 10px!important;
+    background-color: black !important;
+
 }
 
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black; !important;
+    color: white !important;
     font-size: 12px;
     opacity: 1;
     /* Firefox */
@@ -385,7 +380,6 @@ select{
     border-bottom: 1px solid#1cb5e0;
     border-radius: 5px;
     opacity: 0.7;
-   
 }
 
 #chart_6 {
@@ -395,7 +389,6 @@ select{
     border-bottom: 1px solid#1cb5e0;
     border-radius: 5px;
     opacity: 0.7;
-   
 }
 
 #chart_7 {
@@ -405,7 +398,6 @@ select{
     border-bottom: 1px solid#1cb5e0;
     border-radius: 5px;
     opacity: 0.7;
-   
 }
 
 #chart_8 {
@@ -415,43 +407,80 @@ select{
     border-bottom: 1px solid#1cb5e0;
     border-radius: 5px;
     opacity: 0.7;
-   
 }
 
 /* end footer css  */
 
 
+
+
+/* portfolio archive css */
+.main_card{
+    background:   #013746;
+}
+.card_header_text{
+    font-size: 25px;
+    color:white;
+    padding-left: 20px;
+    padding-top: 10px;;
+}
+.main_card_header{
+    background: linear-gradient(to right, #283E51, #1cb5e0);
+}
+.small_card_warpper{
+  border-radius:10px;  
+  background: linear-gradient(to right, #283E51, #1cb5e0);
+  margin-left: 1px;
+}
+.profile_card_avatar{
+  height: 85%;;
+  width: 100%;;
+  padding:0px;
+  border-radius:50%;
+  border:1px solid white;
+}
+.small_card_left_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+}
+.small_card_right_wrapper{
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    flex-direction: column;
+}
+.small_card_inputs{
+    width: 80%;
+    height: 15px;
+    background-color:transparent;
+    border:1px solid white;
+    border-radius: 25px;
+}
+.small_card_scroll{
+    border-right:1px solid white ;
+    border-radius: 25px;
+}
+.chain_icon{
+font-size: 10px;;
+}
+.eye_icon{
+    font-size: 10px;;
+}
 /* seconds nav  */
 .second_nav_btn{
     border-radius:0px 0px 0px 25px;
 }
 .second_nav_row{
     border-radius:0px 0px 10px 10px;
-    background: linear-gradient(#154874, #000);
+    background: linear-gradient(to right, #283E51, #1cb5e0);
 }
 
 
 
-/* strat of left notification date and time  */
-.left_nav_time{
-    position:absolute;
-    top:3px;
-    left:18px;
-    font-size:7px;
-}
-.left_nav_date{
-    position:absolute;
-    top:13px;
-    left:18px;
-    font-size:7px;
-}
-.date_time_wrapper{
-    position:relative;
-}
 
-
-/* end normal csss
- */
 
 /* (1920x1080) Full HD Display */
 @media screen and (max-width: 1920px) {
@@ -711,22 +740,6 @@ select{
 
 
 
-/* strat of left notification date and time  */
-.left_nav_time{
-    position:absolute;
-    top:1px;
-    left:18px;
-    font-size:10px;
-}
-.left_nav_date{
-    position:absolute;
-    top:17px;
-    left:18px;
-    font-size:10px;
-}
-.date_time_wrapper{
-    position:relative;
-}
 
 
 
@@ -775,12 +788,12 @@ select{
     .left_nav {
         width: 195px;
         height: 238px;
-        background-image: url('../used_assets/left notification panel.svg');
+        background-image: url('./../used_assets/left notification panel.svg');
         background-repeat: no-repeat;
         padding-bottom: 27%;
         padding-left: 17%;
         padding-right: 31%;
-        padding-top: 29%;
+        padding-top: 25%;
       
       
 
@@ -789,8 +802,12 @@ select{
 
 
     .left_nav_text {
+
+
         font-size: 10px;
-        overflow: hidden
+        overflow: hidden;
+
+
 
     }
 
@@ -985,94 +1002,4 @@ select{
 
 
 
-/* footer css start  */
-.footer_wrapper {
-    margin-top: 10px;
-    ;
 }
-
-
-
-
-
-.footer_div_1 {
-    border-right: 5px solid #1cb5e0;
-    border-left: 5px solid #1cb5e0;
-    border-top: 1px solid#1cb5e0;
-    border-bottom: 1px solid#1cb5e0;
-    border-radius: 5px;
-    height: 100%;
-    opacity: 0.7;
-    height: 100px;;
-  
-}
-
-
-/* footer charts  */
-
-#chart_5 {
-    border-right: 5px solid#1cb5e0;
-    border-left: 5px solid#1cb5e0;
-    border-top: 1px solid#1cb5e0;
-    border-bottom: 1px solid#1cb5e0;
-    border-radius: 5px;
-    opacity: 0.7;
-    height: 100px;;
-}
-
-#chart_6 {
-    border-right: 5px solid#1cb5e0;
-    border-left: 5px solid#1cb5e0;
-    border-top: 1px solid#1cb5e0;
-    border-bottom: 1px solid#1cb5e0;
-    border-radius: 5px;
-    opacity: 0.7;
-    height: 100px;;
-}
-
-#chart_7 {
-    border-right: 5px solid#1cb5e0;
-    border-left: 5px solid#1cb5e0;
-    border-top: 1px solid#1cb5e0;
-    border-bottom: 1px solid#1cb5e0;
-    border-radius: 5px;
-    opacity: 0.7;
-    height: 100px;;
-}
-
-#chart_8 {
-    border-right: 5px solid#1cb5e0;
-    border-left: 5px solid#1cb5e0;
-    border-top: 1px solid#1cb5e0;
-    border-bottom: 1px solid#1cb5e0;
-    border-radius: 5px;
-    opacity: 0.7;
-    height: 100px;;
-}
-
-/* end footer css  */
-
-
-
-
-/* strat of left notification date and time  */
-.left_nav_time{
-    position:absolute;
-    top:1px;
-    left:18px;
-    font-size:7px;
-}
-.left_nav_date{
-    position:absolute;
-    top:10px;
-    left:18px;
-    font-size:7px;
-}
-.date_time_wrapper{
-    position:relative;
-}
-
-
-}
-
-

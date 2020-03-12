@@ -1,0 +1,63 @@
+.card_background{
+    background: linear-gradient(#154874, #000);
+    border-radius:15px 15px 0px 0px;
+    height: ;
+}
+.form_background_1{
+    
+
+background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 97%);
+
+    
+}
+
+.form_background_2{
+    
+
+    background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(210,210,210,1) 97%, rgba(0,0,0,1) 100%);
+    
+        
+    }
+.nav_text{
+    font-size:25px;
+}
+.custom_div_1{
+    background: linear-gradient(#154874, #000);
+    border-radius:0px 0px 5px 5px;
+    letter-spacing: 2px;;
+
+  
+}
+
+.form_label{
+    background: linear-gradient(#154874, #000);
+    border:1px solid white;
+   
+    ;
+}
+
+
+.form_label_text{
+    font-size:12px;
+    background: linear-gradient(#154874, #000);
+    color:white;
+    width: 20%;
+    padding-top:3px;
+    text-align: center;
+    letter-spacing: 2px;;
+    font-weight:bold;
+    height: 30px;;
+    border-radius:2px 2px 2px 2px;
+}
+.form_input{
+    background-color: rgb(255,255,255,1)!important;
+    /* background: linear-gradient(to right,#d2d2d2, #f2f2f2); */
+    border-radius: 5px 5px 5px 5px!important;
+    height: 30px;;
+}
+
+
+@media screen and (max-width: 1366px) {
+  
+
+}
