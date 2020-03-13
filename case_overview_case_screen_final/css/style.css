@@ -1,18 +1,10 @@
 
 .form_background_1{
-    
-
-background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 97%);
-
-    
+background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 97%);   
 }
 
 .form_background_2{
-    
-
     background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(210,210,210,1) 97%, rgba(0,0,0,1) 100%);
-    
-        
     }
 .nav_text{
     font-size:25px;
@@ -29,7 +21,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
     background: linear-gradient(#154874, #000);
     border:1px solid white;
    
-    ;
+    
 }
 
 
@@ -72,6 +64,9 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
 
 .chain_icon{
     font-size:20px;
+    color: #bdd4e7;
+  
+
 }
 
 .share_icon_wrapper{
@@ -83,6 +78,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
 }
 .share_icon{
     font-size:20px;
+    color: #bdd4e7;
 }
 
 .left_border_text_wrapper{
@@ -90,20 +86,26 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
     height:80%;
     border-radius :2px 15px 15px 2px;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
 }
 
 .left_border_text{
     font-size:10px;
     color:blue;
-    /* padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-right: 5px;; */
+   
 }
 .right_border_text_wrapper{
     border-radius:15px 2px 2px 15px ;
     background-color: aliceblue;;
-    height: 80%;;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;;
+
 }
 
 .right_border_text{
@@ -119,15 +121,15 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
 }
 
 .top_right_icon_wrapper{
-    height:10%;
-    border-radius:0px 15px 15px 0px ;
+     height:10%;
+     border-radius:0px 15px 0px 0px ;
      background: linear-gradient(#154874, #000);
-     border: 1px solid #154874;
      border: 1px solid white;
 }
 
 .top_right_icon{
     font-size:25px;
+    color: #bdd4e7;
 }
 
 .camera_icon_wrapper{
@@ -140,6 +142,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
 }
 .camera_icon{
     font-size:25px;
+    color: #bdd4e7;
 }
 
 
@@ -166,8 +169,10 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
     overflow: hidden;;
 }
 .overview_profile_image{
-    height:100%;
+    height:125px;
     width:100%;
+    border:1px solid black;
+    border-radius:50%;
 }
 
 
@@ -193,143 +198,6 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 67%, rgba(255,255,255,1)
     border:1px solid white; 
 }
 
-#caseCreate_div{
-  
+#caseOverview_div{
+  background-color: linear-grdient(to bottom,#d2d2d2,#f2f2f2);
 }
-
-
-@media screen and (max-width: 1366px) {
-  
-
-/* case overview css */
-
-.left_border{
-    background: linear-gradient(#154874, #000);
-  border-radius:15px 0px 0px 15px ;
-}
-
-.chain_icon_wrapper{
-    height:10%;
-    border-radius:15px 0px 0px 0px ;
-     background: linear-gradient(#154874, #000);
-     border: 1px solid #154874;
-     border: 1px solid white;
-}
-
-.chain_icon{
-    font-size:20px;
-}
-
-.share_icon_wrapper{
-    height:10%;
-    border-radius:0px 0px 0px 15px ;
-    background: linear-gradient(#154874, #000);
-    border: 1px solid #154874;
-    border: 1px solid white;
-}
-.share_icon{
-    font-size:20px;
-}
-
-.left_border_text_wrapper{
-    overflow:hidden;
-    height:80%;
-    border-radius :2px 15px 15px 2px;
-    background-color: aliceblue;
-}
-
-.left_border_text{
-    font-size:10px;
-   
-    /* padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-right: 5px;; */
-}
-.right_border_text_wrapper{
-    border-radius:15px 2px 2px 15px ;
-    background-color: aliceblue;;
-    
-}
-
-.right_border_text{
-    overflow:hidden;
-    height:80%;
-    border-radius :15px 2px 2px 15px;
-   
-}
-
-.right_border{
-border-radius:0px 16px 16px 0px;
-    background: linear-gradient(#154874, #000);
-}
-
-.top_right_icon_wrapper{
-    height:10%;
-    border-radius:0px 15px 0px 0px ;
-     background: linear-gradient(#154874, #000);
-     border: 1px solid #154874;
-     border: 1px solid white;
-}
-
-.top_right_icon{
-    font-size:20px;
-}
-
-.camera_icon_wrapper{
-
-    height:10%;
-    ;border-radius:0px 0px 15px 0px ;
-     background: linear-gradient(#154874, #000);
-     border: 1px solid #154874;
-     border: 1px solid white;
-}
-.camera_icon{
-    font-size:20px;
-}
-
-
-
-
-
-.case_overview_div_1{
-    font-size:12px;
-    height:80px;
-    overflow: hidden;
-   
-}
-
-
-.case_overview_div_2{
-    font-size:12px;
-    height:80px;
-    overflow: hidden;;
-}
-.overview_profile_image{
-    height:100%;
-    width:100%;
-   
-}
-
-
-
-.custom_div_2{
-    background: linear-gradient(#154874, #000);
-    border-radius:20px 20px 0px 0px!important;
-    letter-spacing: 2px;;
-    font-size: 14px;;
-    height: 3color:white;
-    padding:5px;0px;;
-  
-}
-
-.nav_text{
-    font-size:18px;
-}
-
-}
-
-
-
-
-

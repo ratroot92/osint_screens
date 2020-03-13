@@ -987,7 +987,7 @@ select{
 
 /* footer css start  */
 .footer_wrapper {
-    margin-top: 10px;
+    margin-top: 15px;
     ;
 }
 
@@ -1001,9 +1001,12 @@ select{
     border-top: 1px solid#1cb5e0;
     border-bottom: 1px solid#1cb5e0;
     border-radius: 5px;
-    height: 100%;
     opacity: 0.7;
     height: 100px;;
+    width: 95%;
+    font-size: 9px;
+    color:white;
+    padding: 10px;;
   
 }
 
