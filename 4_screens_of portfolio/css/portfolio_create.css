@@ -1,0 +1,64 @@
+.create_tab_card{
+    border:0px solid white;
+    border-radius:50px!important 
+}
+
+.card_header_create_tab{
+    background: linear-gradient(to right, #283E51, #03262f);
+    border-radius: 10px 10px 0px 0px!important;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+.card_header_text_create_tab{
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bold;;
+}
+.card_body_create_tab{
+    height: 500px;
+    background: linear-gradient(to bottom, #f2f2f2, #d2d2d2) !important;
+}
+
+
+
+/* form  cold-m-10 */
+.create_form_wrapper{
+    
+}
+.create_radio_btns{
+    height: 60px;
+    width: 160px;;
+    background: linear-gradient(#154874, #000);
+    color: white;
+    font-weight: bold;1 
+    border-radius: 15px;
+    background-image: url('../used_assets/back.png') center fixed no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    opacity: 0.8;
+    border: 1px solid white;
+}
+
+.create_options {
+    font-size: 25px;
+   
+}
+.create_form_input{
+background-color:white!important;
+}
+.create_custom_label{
+    border: 1px solid white;
+    border-radius: 0px;
+    background: linear-gradient(#154874, #000);
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.create_input_text{
+    width: 200px;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: white;
+}

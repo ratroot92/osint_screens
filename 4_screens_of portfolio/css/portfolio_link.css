@@ -1,0 +1,71 @@
+
+
+
+
+/*portfolio link  tab css*/
+.card_header_link_tab{
+    background: linear-gradient(to right, #283E51, #03262f);
+    border-radius: 10px 10px 0px 0px!important;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+.card_header_text_link_tab{
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bold;;
+}
+.card_body_link_tab{
+    height: 500px;
+   
+}
+.card_body_link_tab{
+    background: linear-gradient(to right, #283E51, #03262f);
+}
+.writing_mode_link_wrapper{
+    background: linear-gradient(to right, #283E51, #03262f);
+    border-radius:0px 25px 25px 0px;;
+}
+.writing_mode_link{
+    writing-mode: vertical-lr;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    ;
+}
+.icon_chain_link_tab{
+    font-size:35px;
+}
+.icon_eye_link_tab{
+    font-size:35px;
+}
+.card_body_link_tab_first_col{
+    border-radius:25px 0px 0px 25px;;
+}
+.icon_chain_link_tab_wrapper{
+    height: 17%;;
+    border-bottom:1px solid white;
+    background: linear-gradient(to right, #283E51, #03262f);
+    border-radius:25px 0px 0px 0px;;;
+}
+.icon_eye_link_tab_wrapper{
+    height: 17%;
+    border-top:1px solid white;
+    background: linear-gradient(to right, #283E51, #03262f);
+    border-radius:0px 0px 0px 25px;
+    color:linear-gradient(to right, #283E51, #03262f);
+}
+.between_icons_link_tab{
+    height: 66%;;
+     
+}
+.link_tab_card{
+   border:0px solid white;
+    border-radius:50px!important 
+}
+.card_body_link_tab{
+    border-radius:0px 0px 15px 15px;   
+}
+.tab-pane{
+    border:none!important;
+}
